@@ -1,0 +1,2425 @@
+{
+  "bench_press": {
+    "name": "Barbell Bench Press",
+    "nameAr": "ضغط البار على المقعد المستوي",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [
+      "Triceps",
+      "Front Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ثلاثية الرؤوس",
+      "الكتف الأمامي"
+    ],
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "rT7DgCr-3pg",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Bench-Press.gif",
+    "stepByStepInstructions": [
+      "Lie flat on the bench with your eyes under the bar. Plant your feet firmly on the floor.",
+      "Grip the bar just outside shoulder width. Retract and depress your scapulae.",
+      "Unrack the bar and hold it directly over your mid-chest with arms locked.",
+      "Lower the bar with control to touch your mid-chest, keeping elbows at ~45–75° from your torso.",
+      "Drive the bar back up explosively to lockout. Do not bounce off the chest."
+    ],
+    "stepByStepInstructionsAr": [
+      "استلقِ على المقعد بحيث تكون عيناك أسفل البار مباشرة، وثبّت قدميك بقوة على الأرض.",
+      "أمسك البار بقبضة أوسع قليلاً من عرض الكتفين، واسحب لوحي كتفيك للخلف والأسفل.",
+      "ارفع البار من الحامل واحمله فوق منتصف صدرك مع تثبيت الذراعين.",
+      "أنزل البار بتحكم حتى يلامس منتصف الصدر، مع إبقاء المرفقين بزاوية 45–75° عن الجذع.",
+      "ادفع البار للأعلى بقوة حتى تثبيت الذراعين، ولا ترتدّ عن الصدر."
+    ],
+    "commonMistakes": [
+      "Bouncing the bar off the chest — reduces range of motion and risks injury.",
+      "Flared elbows — excessive elbow flare shifts load to the shoulder joint.",
+      "Lifting the hips off the bench — removes tension from the chest.",
+      "Incorrect bar path — the bar should travel in a slight arc, not straight up."
+    ],
+    "commonMistakesAr": [
+      "ارتداد البار عن الصدر — يقلّل مدى الحركة ويزيد خطر الإصابة.",
+      "تفتيح المرفقين بشكل مبالغ — ينقل الحمل إلى مفصل الكتف.",
+      "رفع الوركين عن المقعد — يفقد الصدر التوتر.",
+      "مسار خاطئ للبار — يجب أن يتحرك البار بقوس بسيط لا بشكل عمودي تام."
+    ],
+    "breathingCue": "Breathe in on the way down; exhale forcefully on the press up.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر بقوة أثناء الدفع للأعلى.",
+    "safetyNote": "Always use a spotter or safety pins when working at high RPE. Do not attempt max effort without a rack.",
+    "safetyNoteAr": "استعن بمساعد أو بمصدّات الأمان عند الأوزان العالية، ولا تحاول أقصى مجهود دون حامل.",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "bent_over_row": {
+    "name": "Barbell Bent-Over Row",
+    "nameAr": "تجديف البار بانحناء الجذع",
+    "primaryMuscleGroup": "Back",
+    "primaryMuscleGroupAr": "الظهر",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Rear Deltoids",
+      "Core"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الكتف الخلفي",
+      "عضلات الجذع"
+    ],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "G8l_8chR5BE",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Bent-Over-Row.gif",
+    "stepByStepInstructions": [
+      "Stand with the bar over your mid-foot, hip-width stance.",
+      "Hinge at the hips until your torso is roughly 45–60° to the floor. Brace your core.",
+      "Grip the bar just outside shoulder width, overhand grip.",
+      "Drive your elbows back and up, pulling the bar to your lower chest / upper abdomen.",
+      "Squeeze your shoulder blades at the top, then lower under control."
+    ],
+    "stepByStepInstructionsAr": [
+      "قف والبار فوق منتصف قدميك، والمسافة بين القدمين بعرض الوركين.",
+      "انحنِ من الوركين حتى يصبح جذعك بزاوية 45–60° عن الأرض، وشدّ عضلات جذعك.",
+      "أمسك البار بقبضة أوسع قليلاً من الكتفين وراحتا اليدين للأسفل.",
+      "اسحب مرفقيك للخلف والأعلى ساحباً البار إلى أسفل صدرك/أعلى بطنك.",
+      "اعصر لوحي كتفيك في الأعلى ثم أنزل البار بتحكم."
+    ],
+    "commonMistakes": [
+      "Jerking the weight up with momentum — use a controlled pull.",
+      "Rounding the lower back — keep a neutral spine throughout.",
+      "Pulling too high — the bar should contact your stomach, not your upper chest."
+    ],
+    "commonMistakesAr": [
+      "رفع الوزن بحركة اندفاعية — استخدم سحباً متحكّماً به.",
+      "تقويس أسفل الظهر — حافظ على استقامة العمود الفقري طوال الحركة.",
+      "السحب لأعلى من اللازم — يجب أن يلامس البار بطنك لا أعلى صدرك."
+    ],
+    "breathingCue": "Brace and exhale as you row; inhale on the lowering phase.",
+    "breathingCueAr": "شدّ جذعك وازفر أثناء السحب، واستنشق أثناء النزول.",
+    "safetyNote": "Maintain a neutral spine to protect the lower back. Reduce load if lower back rounds.",
+    "safetyNoteAr": "حافظ على استقامة العمود الفقري لحماية أسفل الظهر، وقلّل الوزن إذا بدأ ظهرك يتقوّس.",
+    "category": "pull_horizontal",
+    "status": "yes"
+  },
+  "incline_db_press": {
+    "name": "Incline DB Press",
+    "nameAr": "ضغط الدمبل على المقعد المائل",
+    "primaryMuscleGroup": "Upper Chest",
+    "primaryMuscleGroupAr": "أعلى الصدر",
+    "secondaryMuscleGroups": [
+      "Triceps",
+      "Front Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ثلاثية الرؤوس",
+      "الكتف الأمامي"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Incline Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد مائل"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "0G2_XV7slIg",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Incline-Dumbbell-Press.gif",
+    "stepByStepInstructions": [
+      "Set the bench to 30–45 degrees. Sit with dumbbells on your thighs.",
+      "Use your thighs to kick the dumbbells up as you lie back.",
+      "Press the dumbbells above your upper chest, palms facing forward.",
+      "Lower the dumbbells until your elbows are slightly below the bench level.",
+      "Drive them back up powerfully and repeat."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط المقعد على زاوية 30–45 درجة، واجلس والدمبلان على فخذيك.",
+      "استخدم فخذيك لرفع الدمبلين أثناء استلقائك للخلف.",
+      "ادفع الدمبلين فوق أعلى صدرك مع توجيه راحتي اليدين للأمام.",
+      "أنزل الدمبلين حتى يصبح مرفقاك أسفل مستوى المقعد قليلاً.",
+      "ادفعهما للأعلى بقوة ثم كرّر."
+    ],
+    "commonMistakes": [
+      "Setting the incline too steep — beyond 45° shifts emphasis to the shoulders.",
+      "Letting the dumbbells drift outward — keep them over the chest.",
+      "Cutting the range of motion short at the bottom."
+    ],
+    "commonMistakesAr": [
+      "زيادة ميل المقعد أكثر من اللازم — تجاوز 45° ينقل التركيز إلى الأكتاف.",
+      "انحراف الدمبلين للخارج — أبقهما فوق الصدر.",
+      "تقصير مدى الحركة في الأسفل."
+    ],
+    "breathingCue": "Inhale on the descent, exhale on the press.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر أثناء الدفع.",
+    "safetyNote": "Start with a conservative weight when finding your balance with dumbbells.",
+    "safetyNoteAr": "ابدأ بوزن معتدل حتى تتقن توازنك مع الدمبل.",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "lat_pulldown_neutral": {
+    "name": "Lat Pulldown (Neutral Grip)",
+    "nameAr": "السحب الأمامي بقبضة محايدة",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Rear Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الكتف الخلفي"
+    ],
+    "equipment": [
+      "Cable Machine",
+      "Neutral Grip Bar"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل",
+      "قبضة محايدة"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "CAwf7n6Luuc",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Close-Grip-Lat-Pulldown.gif",
+    "stepByStepInstructions": [
+      "Sit at the pulldown station, thighs under pads. Grip the neutral handles.",
+      "Lean back slightly with a tall chest — not hunched forward.",
+      "Pull the bar to your upper chest by driving your elbows down and back.",
+      "Squeeze your lats at the bottom, then control the weight back to the top.",
+      "Let your arms fully extend overhead without shrugging your shoulders."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس على الجهاز مع تثبيت فخذيك تحت الوسادة، وأمسك المقبضين المحايدين.",
+      "مِل للخلف قليلاً مع رفع صدرك، دون انحناء للأمام.",
+      "اسحب المقبض إلى أعلى صدرك بدفع مرفقيك للأسفل والخلف.",
+      "اعصر عضلات ظهرك في الأسفل ثم تحكّم بعودة الوزن للأعلى.",
+      "دع ذراعيك يمتدّان بالكامل للأعلى دون رفع كتفيك."
+    ],
+    "commonMistakes": [
+      "Pulling behind the neck — severe risk of cervical spine injury.",
+      "Using momentum and swinging the torso backwards.",
+      "Not fully extending at the top — cuts off lat stretch."
+    ],
+    "commonMistakesAr": [
+      "السحب خلف الرقبة — خطر كبير على الفقرات العنقية.",
+      "استخدام الاندفاع وأرجحة الجذع للخلف.",
+      "عدم مدّ الذراعين بالكامل في الأعلى — يقلّل تمدد عضلة الظهر."
+    ],
+    "breathingCue": "Exhale as you pull down; inhale as you return.",
+    "breathingCueAr": "ازفر أثناء السحب للأسفل، واستنشق أثناء العودة.",
+    "safetyNote": "Never pull the bar behind the neck. Always pull to the chest.",
+    "safetyNoteAr": "لا تسحب البار خلف الرقبة أبداً، بل دائماً إلى الصدر.",
+    "category": "pull_vertical",
+    "status": "yes"
+  },
+  "lateral_raise_db": {
+    "name": "Lateral Raise (DB)",
+    "nameAr": "الرفرفة الجانبية بالدمبل",
+    "primaryMuscleGroup": "Side Deltoids",
+    "primaryMuscleGroupAr": "الكتف الجانبي",
+    "secondaryMuscleGroups": [
+      "Traps"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة شبه المنحرفة"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "3VcKaXpzqRo",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Lateral-Raise.gif",
+    "stepByStepInstructions": [
+      "Stand with dumbbells at your sides, slight bend in the elbows.",
+      "Raise your arms out to the sides until they are parallel to the floor.",
+      "Lead with the pinky side of the hand, as if pouring water from a jug.",
+      "Lower the dumbbells slowly back to your sides — control the eccentric."
+    ],
+    "stepByStepInstructionsAr": [
+      "قف والدمبلان بجانبيك مع ثني خفيف في المرفقين.",
+      "ارفع ذراعيك للجانبين حتى يصبحا موازيين للأرض.",
+      "وجّه جانب الخنصر للأعلى كأنك تسكب الماء من إبريق.",
+      "أنزل الدمبلين ببطء إلى جانبيك مع التحكم في مرحلة النزول."
+    ],
+    "commonMistakes": [
+      "Swinging or using momentum — slow and controlled is key.",
+      "Raising above parallel — above shoulder height shifts to the traps.",
+      "Using too much weight and shrugging the traps."
+    ],
+    "commonMistakesAr": [
+      "الأرجحة أو استخدام الاندفاع — البطء والتحكم هما الأساس.",
+      "الرفع فوق مستوى الكتف — ينقل الحمل إلى العضلة شبه المنحرفة.",
+      "استخدام وزن ثقيل ورفع الكتفين."
+    ],
+    "breathingCue": "Exhale as you raise; inhale as you lower.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "Keep the weight moderate to maintain control and protect the shoulder joint.",
+    "safetyNoteAr": "أبقِ الوزن معتدلاً للحفاظ على التحكم وحماية مفصل الكتف.",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "barbell_curl": {
+    "name": "Barbell Curl",
+    "nameAr": "مرجحة البار للعضلة ذات الرأسين",
+    "primaryMuscleGroup": "Biceps",
+    "primaryMuscleGroupAr": "العضلة ذات الرأسين",
+    "secondaryMuscleGroups": [
+      "Brachialis",
+      "Forearms"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة العضدية",
+      "الساعدان"
+    ],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "ykJmrZ5v0Oo",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Curl.gif",
+    "stepByStepInstructions": [
+      "Stand with a shoulder-width supinated (palms up) grip on the bar.",
+      "Keep your elbows fixed at your sides throughout the movement.",
+      "Curl the bar up towards your chest, squeezing at the top.",
+      "Lower slowly back to the start — resist gravity on the way down."
+    ],
+    "stepByStepInstructionsAr": [
+      "قف وأمسك البار بقبضة بعرض الكتفين وراحتا اليدين للأعلى.",
+      "أبقِ مرفقيك ثابتين بجانبيك طوال الحركة.",
+      "ارفع البار نحو صدرك مع العصر في الأعلى.",
+      "أنزله ببطء إلى نقطة البداية مقاوماً الجاذبية أثناء النزول."
+    ],
+    "commonMistakes": [
+      "Letting the elbows drift forward — elbows should stay fixed at your sides.",
+      "Using momentum and swinging the hips.",
+      "Not fully extending at the bottom — cuts off the stretch."
+    ],
+    "commonMistakesAr": [
+      "تحريك المرفقين للأمام — يجب أن يبقيا ثابتين بجانبيك.",
+      "استخدام الاندفاع وأرجحة الوركين.",
+      "عدم مدّ الذراعين بالكامل في الأسفل — يقلّل التمدد."
+    ],
+    "breathingCue": "Exhale on the curl; inhale on the way down.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "Use a weight that allows strict form. EZ-bar is a good alternative if wrist discomfort occurs.",
+    "safetyNoteAr": "استخدم وزناً يسمح بأداء منضبط. بار EZ بديل جيد عند الشعور بألم في الرسغ.",
+    "category": "arms",
+    "status": "yes"
+  },
+  "back_squat": {
+    "name": "Barbell Back Squat",
+    "nameAr": "السكوات الخلفي بالبار",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [
+      "Glutes",
+      "Hamstrings",
+      "Core",
+      "Adductors"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "عضلات المؤخرة",
+      "أوتار الركبة",
+      "عضلات الجذع",
+      "العضلات المقرِّبة"
+    ],
+    "equipment": [
+      "Barbell",
+      "Squat Rack"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "حامل سكوات"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "ultWZbUMPL8",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/BARBELL-SQUAT.gif",
+    "stepByStepInstructions": [
+      "Set the bar on the rack at upper chest height. Step under it and position it on your upper traps (high bar) or rear delts (low bar).",
+      "Unrack the bar, take two steps back, feet shoulder-to-hip width with toes slightly turned out.",
+      "Take a big breath into your belly and brace your core as if expecting a punch.",
+      "Push your knees out in line with your toes and descend to at least parallel — crease of the hip below the top of the knee.",
+      "Drive through your whole foot back to standing, maintaining a tall chest."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط البار على الحامل بارتفاع أعلى الصدر، وادخل تحته وضعه على أعلى شبه المنحرفة (بار عالٍ) أو الكتف الخلفي (بار منخفض).",
+      "ارفع البار وتراجع خطوتين، والقدمان بعرض الكتفين إلى الوركين وأصابع القدمين متجهة للخارج قليلاً.",
+      "خذ نفساً عميقاً إلى بطنك وشدّ جذعك كأنك تتوقع لكمة.",
+      "ادفع ركبتيك للخارج بمحاذاة أصابع قدميك وانزل حتى الموازاة على الأقل — يكون مفصل الورك أسفل أعلى الركبة.",
+      "ادفع بكامل قدمك للعودة للوقوف مع رفع صدرك."
+    ],
+    "commonMistakes": [
+      "Caving knees inward — push the knees out throughout the movement.",
+      "Butt wink (excessive posterior pelvic tilt at the bottom) — work on hip mobility.",
+      "Forward lean — keep a tall, proud chest.",
+      "Rising on the toes — keep the whole foot in contact with the floor."
+    ],
+    "commonMistakesAr": [
+      "انطباق الركبتين للداخل — ادفعهما للخارج طوال الحركة.",
+      "دوران الحوض للخلف في الأسفل — اعمل على مرونة الورك.",
+      "الميل للأمام — حافظ على صدر مرفوع ومستقيم.",
+      "النهوض على أطراف الأصابع — أبقِ كامل القدم ملامساً للأرض."
+    ],
+    "breathingCue": "Big breath before descending; exhale on the way up past the sticking point.",
+    "breathingCueAr": "نفس عميق قبل النزول، وازفر أثناء الصعود بعد أصعب نقطة.",
+    "safetyNote": "Always squat in a power rack with safety bars set just below your parallel depth.",
+    "safetyNoteAr": "أدِّ السكوات دائماً داخل حامل بمصدّات أمان مضبوطة أسفل عمق الموازاة بقليل.",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "romanian_deadlift": {
+    "name": "Romanian Deadlift",
+    "nameAr": "الرفعة الرومانية",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [
+      "Glutes",
+      "Lower Back",
+      "Traps"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "عضلات المؤخرة",
+      "أسفل الظهر",
+      "العضلة شبه المنحرفة"
+    ],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "7j-2GmxUBBg",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Romanian-Deadlift.gif",
+    "stepByStepInstructions": [
+      "Hold the bar at hip level with a double overhand grip.",
+      "Push your hips back and hinge forward, keeping the bar close to your legs.",
+      "Lower the bar to mid-shin (or until you feel a strong hamstring stretch) — keep the back flat.",
+      "Drive your hips forward to return to standing, squeezing the glutes at the top."
+    ],
+    "stepByStepInstructionsAr": [
+      "امسك البار عند مستوى الورك بقبضة علوية مزدوجة.",
+      "ادفع وركيك للخلف وانحنِ للأمام مع إبقاء البار قريباً من ساقيك.",
+      "أنزل البار حتى منتصف الساق (أو حتى تشعر بتمدد قوي في الفخذ الخلفي) مع إبقاء الظهر مستقيماً.",
+      "ادفع وركيك للأمام للعودة للوقوف مع عصر عضلات المؤخرة في الأعلى."
+    ],
+    "commonMistakes": [
+      "Rounding the lower back — maintain a neutral spine at all times.",
+      "Bending the knees excessively — this turns it into a stiff-leg deadlift variation.",
+      "Letting the bar drift away from the body — keep it dragging your shins."
+    ],
+    "commonMistakesAr": [
+      "تقويس أسفل الظهر — حافظ على استقامة العمود الفقري دائماً.",
+      "ثني الركبتين أكثر من اللازم — يحوّلها إلى نسخة أخرى من الرفعة.",
+      "ابتعاد البار عن الجسم — أبقه ملامساً لساقيك."
+    ],
+    "breathingCue": "Inhale and brace on the descent; exhale as you drive to standing.",
+    "breathingCueAr": "استنشق وشدّ جذعك أثناء النزول، وازفر أثناء العودة للوقوف.",
+    "safetyNote": "Stop before your lower back rounds. Flexibility will improve over time.",
+    "safetyNoteAr": "توقّف قبل أن يتقوّس أسفل ظهرك، وستتحسّن مرونتك مع الوقت.",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "leg_press": {
+    "name": "Leg Press",
+    "nameAr": "دفع الأرجل بالجهاز",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "عضلات المؤخرة",
+      "أوتار الركبة"
+    ],
+    "equipment": [
+      "Leg Press Machine"
+    ],
+    "equipmentAr": [
+      "جهاز دفع الأرجل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "IZxyjW7MPJQ",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2015/11/Leg-Press.gif",
+    "stepByStepInstructions": [
+      "Sit in the machine with your back flat against the pad.",
+      "Place feet shoulder-width apart at the middle of the platform.",
+      "Release the safety handles and lower the platform toward your chest.",
+      "Stop before your lower back peels off the pad, then press through your whole foot."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس في الجهاز وظهرك مستوٍ على الوسادة.",
+      "ضع قدميك بعرض الكتفين في منتصف المنصة.",
+      "حرّر مقابض الأمان وأنزل المنصة نحو صدرك.",
+      "توقّف قبل أن ينفصل أسفل ظهرك عن الوسادة، ثم ادفع بكامل قدمك."
+    ],
+    "commonMistakes": [
+      "Going too deep and losing lower back contact with the pad.",
+      "Placing feet too low — places excess stress on the knees.",
+      "Locking out the knees fully at the top — keep a micro-bend."
+    ],
+    "commonMistakesAr": [
+      "النزول عميقاً وفقدان تلامس أسفل الظهر مع الوسادة.",
+      "وضع القدمين منخفضتين — يزيد الضغط على الركبتين.",
+      "تثبيت الركبتين بالكامل في الأعلى — أبقِ ثنية بسيطة."
+    ],
+    "breathingCue": "Inhale on the descent; exhale on the press.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر أثناء الدفع.",
+    "safetyNote": "Do not allow the knees to collapse inward. Keep them tracking over the toes.",
+    "safetyNoteAr": "لا تدع ركبتيك تنطبقان للداخل، وأبقهما بمحاذاة أصابع القدمين.",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "seated_leg_curl": {
+    "name": "Seated Leg Curl",
+    "nameAr": "ثني الأرجل جالساً",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [
+      "Calves"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "السمانة (بطة الساق)"
+    ],
+    "equipment": [
+      "Leg Curl Machine"
+    ],
+    "equipmentAr": [
+      "جهاز ثني الأرجل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "1Tq3QdYUuHs",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/08/Seated-Leg-Curl.gif",
+    "stepByStepInstructions": [
+      "Sit in the machine, adjust so the pad sits just above your heels.",
+      "Hold the side handles for stability.",
+      "Curl your legs down as far as possible, squeezing the hamstrings.",
+      "Return slowly to the start position."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس في الجهاز واضبطه بحيث تستقر الوسادة أعلى كعبيك مباشرة.",
+      "أمسك المقبضين الجانبيين للثبات.",
+      "اثنِ ساقيك للأسفل قدر المستطاع مع عصر أوتار الركبة.",
+      "عُد ببطء إلى وضع البداية."
+    ],
+    "commonMistakes": [
+      "Lifting the hips off the seat — keep your glutes planted.",
+      "Using momentum — use a controlled tempo."
+    ],
+    "commonMistakesAr": [
+      "رفع الوركين عن المقعد — أبقِ مؤخرتك ثابتة.",
+      "استخدام الاندفاع — استخدم إيقاعاً متحكّماً به."
+    ],
+    "breathingCue": "Exhale on the curl; inhale on the extension.",
+    "breathingCueAr": "ازفر أثناء الثني، واستنشق أثناء المدّ.",
+    "safetyNote": "Adjust the machine correctly to avoid knee joint stress.",
+    "safetyNoteAr": "اضبط الجهاز بشكل صحيح لتجنّب إجهاد مفصل الركبة.",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "standing_calf_raise": {
+    "name": "Standing Calf Raise",
+    "nameAr": "رفع السمانة وقوفاً",
+    "primaryMuscleGroup": "Calves",
+    "primaryMuscleGroupAr": "السمانة (بطة الساق)",
+    "secondaryMuscleGroups": [
+      "Soleus"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة النعلية"
+    ],
+    "equipment": [
+      "Calf Raise Machine",
+      "Smith Machine"
+    ],
+    "equipmentAr": [
+      "جهاز السمانة",
+      "جهاز سميث"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "gwLzBJYoWlI",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Standing-Calf-Raise.gif",
+    "stepByStepInstructions": [
+      "Position the pads on your shoulders and stand with the balls of your feet on the platform edge.",
+      "Lower your heels as far as comfortable to get a full stretch.",
+      "Drive up onto your toes as high as possible, squeezing the calves.",
+      "Hold the peak contraction briefly, then lower slowly."
+    ],
+    "stepByStepInstructionsAr": [
+      "ضع الوسادتين على كتفيك وقف بمقدمة قدميك على حافة المنصة.",
+      "أنزل كعبيك قدر المستطاع للحصول على تمدد كامل.",
+      "ارتفع على أطراف أصابعك لأعلى ما يمكن مع عصر السمانة.",
+      "اثبت في ذروة الانقباض لحظة ثم انزل ببطء."
+    ],
+    "commonMistakes": [
+      "Bouncing at the bottom — use a controlled pause at the stretched position.",
+      "Not going through full range of motion.",
+      "Bending the knees — keep legs relatively straight (slight bend is fine)."
+    ],
+    "commonMistakesAr": [
+      "الارتداد في الأسفل — استخدم وقفة متحكّماً بها عند التمدد.",
+      "عدم أداء مدى الحركة كاملاً.",
+      "ثني الركبتين — أبقِ الساقين مستقيمتين نسبياً (ثنية بسيطة مقبولة)."
+    ],
+    "breathingCue": "Exhale on the raise; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "Use slow, controlled reps. Avoid ballistic bouncing which can strain the Achilles tendon.",
+    "safetyNoteAr": "أدِّ التكرارات ببطء وتحكّم، وتجنّب الارتداد السريع الذي قد يجهد وتر أخيل.",
+    "category": "calves",
+    "status": "yes"
+  },
+  "hanging_leg_raise": {
+    "name": "Hanging Leg Raise",
+    "nameAr": "رفع الأرجل بالتعليق",
+    "primaryMuscleGroup": "Abs",
+    "primaryMuscleGroupAr": "عضلات البطن",
+    "secondaryMuscleGroups": [
+      "Hip Flexors"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "ثنيات الورك"
+    ],
+    "equipment": [
+      "Pull-Up Bar"
+    ],
+    "equipmentAr": [
+      "بار العقلة"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "hdng3Nm1x_E",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Captains-Chair-Leg-Raise.gif",
+    "stepByStepInstructions": [
+      "Hang from a pull-up bar with a shoulder-width grip.",
+      "Brace your core and tuck your pelvis under slightly.",
+      "Raise your legs until they are parallel to the floor (or higher for advanced).",
+      "Lower them slowly with control — resist the swing."
+    ],
+    "stepByStepInstructionsAr": [
+      "تعلّق من بار العقلة بقبضة بعرض الكتفين.",
+      "شدّ عضلات بطنك وأدر حوضك للأمام قليلاً.",
+      "ارفع ساقيك حتى تصبحا موازيتين للأرض (أو أعلى للمتقدمين).",
+      "أنزلهما ببطء وتحكّم مع مقاومة الأرجحة."
+    ],
+    "commonMistakes": [
+      "Swinging momentum — all movement should come from the core.",
+      "Not tilting the pelvis — without pelvic tilt the hip flexors do all the work."
+    ],
+    "commonMistakesAr": [
+      "الأرجحة بالاندفاع — يجب أن تأتي الحركة كلها من عضلات البطن.",
+      "عدم إمالة الحوض — بدونها تقوم ثنيات الورك بكل العمل."
+    ],
+    "breathingCue": "Exhale as you raise your legs; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء رفع ساقيك، واستنشق أثناء النزول.",
+    "safetyNote": "If you cannot maintain control, start with knee raises and progress from there.",
+    "safetyNoteAr": "إذا لم تستطع التحكّم، ابدأ برفع الركبتين ثم تدرّج من هناك.",
+    "category": "core",
+    "status": "yes"
+  },
+  "incline_barbell_press": {
+    "name": "Incline Barbell Press",
+    "nameAr": "ضغط البار على المقعد المائل",
+    "primaryMuscleGroup": "Upper Chest",
+    "primaryMuscleGroupAr": "أعلى الصدر",
+    "secondaryMuscleGroups": [
+      "Triceps",
+      "Front Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ثلاثية الرؤوس",
+      "الكتف الأمامي"
+    ],
+    "equipment": [
+      "Barbell",
+      "Incline Bench",
+      "Squat Rack"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "مقعد مائل",
+      "حامل"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "SrqOu55lrYU",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Incline-Barbell-Bench-Press.gif",
+    "stepByStepInstructions": [
+      "Set the bench to 30–45 degrees in a rack. Lie back with eyes under the bar.",
+      "Grip slightly wider than shoulder width. Unrack and hold over your upper chest.",
+      "Lower the bar to your upper chest with elbows at 45–60°.",
+      "Drive the bar back up powerfully to lockout."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط المقعد على 30–45 درجة داخل الحامل، واستلقِ وعيناك أسفل البار.",
+      "أمسك البار بقبضة أوسع قليلاً من الكتفين، ارفعه واحمله فوق أعلى صدرك.",
+      "أنزل البار إلى أعلى صدرك والمرفقان بزاوية 45–60°.",
+      "ادفع البار للأعلى بقوة حتى تثبيت الذراعين."
+    ],
+    "commonMistakes": [
+      "Too steep an incline — >45° becomes a shoulder press.",
+      "Bar touching the neck or upper clavicle — aim for upper chest.",
+      "Not retracting scapulae before lowering."
+    ],
+    "commonMistakesAr": [
+      "ميل حاد أكثر من اللازم — تجاوز 45° يحوّلها لضغط أكتاف.",
+      "ملامسة البار للرقبة أو أعلى الترقوة — استهدف أعلى الصدر.",
+      "عدم سحب لوحي الكتف للخلف قبل النزول."
+    ],
+    "breathingCue": "Inhale on the descent; exhale forcefully on the press.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر بقوة أثناء الدفع.",
+    "safetyNote": "Use safety bars or a spotter at high RPE.",
+    "safetyNoteAr": "استخدم مصدّات الأمان أو مساعداً عند الأوزان العالية.",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "seated_db_ohp": {
+    "name": "Seated DB Overhead Press",
+    "nameAr": "الضغط العلوي بالدمبل جالساً",
+    "primaryMuscleGroup": "Shoulders",
+    "primaryMuscleGroupAr": "الأكتاف",
+    "secondaryMuscleGroups": [
+      "Triceps",
+      "Upper Traps"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ثلاثية الرؤوس",
+      "أعلى شبه المنحرفة"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Adjustable Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد قابل للتعديل"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "HzIiNhHhhtA",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Shoulder-Press.gif",
+    "stepByStepInstructions": [
+      "Sit on an upright bench (90°). Kick the dumbbells up to shoulder level, palms facing forward.",
+      "Press the dumbbells overhead until arms are fully extended but not locked aggressively.",
+      "Lower back to shoulder level with control."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس على مقعد عمودي (90°)، وارفع الدمبلين إلى مستوى الكتف وراحتا اليدين للأمام.",
+      "ادفع الدمبلين للأعلى حتى يمتدّ ذراعاك بالكامل دون تثبيت عنيف.",
+      "أنزلهما إلى مستوى الكتف بتحكّم."
+    ],
+    "commonMistakes": [
+      "Arching the lower back excessively — brace your core.",
+      "Letting the dumbbells drift forward — keep them slightly in front of your ears.",
+      "Not achieving full extension at the top."
+    ],
+    "commonMistakesAr": [
+      "تقويس أسفل الظهر بشكل مبالغ — شدّ جذعك.",
+      "انحراف الدمبلين للأمام — أبقهما أمام أذنيك قليلاً.",
+      "عدم المدّ الكامل في الأعلى."
+    ],
+    "breathingCue": "Exhale on the press; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الدفع، واستنشق أثناء النزول.",
+    "safetyNote": "Use a back-supported bench if you have lower back issues.",
+    "safetyNoteAr": "استخدم مقعداً بمسند ظهر إذا كنت تعاني من مشاكل في أسفل الظهر.",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "machine_chest_press": {
+    "name": "Machine Chest Press",
+    "nameAr": "دفع الصدر بالجهاز",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [
+      "Triceps",
+      "Front Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ثلاثية الرؤوس",
+      "الكتف الأمامي"
+    ],
+    "equipment": [
+      "Chest Press Machine"
+    ],
+    "equipmentAr": [
+      "جهاز دفع الصدر"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "QENKPHhQVi4",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Lever-Chest-Press.gif",
+    "stepByStepInstructions": [
+      "Adjust the seat so handles are at mid-chest height.",
+      "Plant your feet on the floor and press your back firmly against the pad.",
+      "Press the handles forward until arms are extended, squeezing the chest.",
+      "Return slowly to the start."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط المقعد بحيث يكون المقبضان بارتفاع منتصف الصدر.",
+      "ثبّت قدميك على الأرض واضغط ظهرك بقوة على الوسادة.",
+      "ادفع المقبضين للأمام حتى يمتدّ ذراعاك مع عصر الصدر.",
+      "عُد ببطء إلى البداية."
+    ],
+    "commonMistakes": [
+      "Seat too high — shifts emphasis to the shoulders.",
+      "Elbows flaring excessively.",
+      "Not controlling the return phase."
+    ],
+    "commonMistakesAr": [
+      "ارتفاع المقعد أكثر من اللازم — ينقل التركيز إلى الأكتاف.",
+      "تفتيح المرفقين بشكل مبالغ.",
+      "عدم التحكّم في مرحلة العودة."
+    ],
+    "breathingCue": "Exhale on the press; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء الدفع، واستنشق أثناء العودة.",
+    "safetyNote": "Adjust the seat to protect the shoulders — handles should be at mid-chest level.",
+    "safetyNoteAr": "اضبط المقعد لحماية الأكتاف — يجب أن يكون المقبضان بمستوى منتصف الصدر.",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "lateral_raise_cable": {
+    "name": "Lateral Raise (Cable)",
+    "nameAr": "الرفرفة الجانبية بالكيبل",
+    "primaryMuscleGroup": "Side Deltoids",
+    "primaryMuscleGroupAr": "الكتف الجانبي",
+    "secondaryMuscleGroups": [
+      "Traps"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة شبه المنحرفة"
+    ],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "PPLFd1WjFaM",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Cable-Lateral-Raise.gif",
+    "stepByStepInstructions": [
+      "Set the cable at the lowest position. Stand side-on to the machine.",
+      "Hold the cable handle with the hand furthest from the machine.",
+      "Raise your arm out to the side until parallel to the floor.",
+      "Lower slowly — the cable provides constant tension, especially at the bottom."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط الكيبل على أدنى وضع، وقف بجانب الجهاز.",
+      "أمسك مقبض الكيبل باليد الأبعد عن الجهاز.",
+      "ارفع ذراعك للجانب حتى تصبح موازية للأرض.",
+      "أنزلها ببطء — يوفّر الكيبل توتراً ثابتاً خصوصاً في الأسفل."
+    ],
+    "commonMistakes": [
+      "Swinging the torso.",
+      "Using too much weight — the cable should maintain tension throughout."
+    ],
+    "commonMistakesAr": [
+      "أرجحة الجذع.",
+      "استخدام وزن ثقيل — يجب أن يحافظ الكيبل على التوتر طوال الحركة."
+    ],
+    "breathingCue": "Exhale on the raise; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "Cable variation provides better tension than dumbbells at the stretched position.",
+    "safetyNoteAr": "نسخة الكيبل توفّر توتراً أفضل من الدمبل عند وضع التمدد.",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "tricep_pushdown": {
+    "name": "Tricep Pushdown",
+    "nameAr": "دفع الحبل للعضلة ثلاثية الرؤوس",
+    "primaryMuscleGroup": "Triceps",
+    "primaryMuscleGroupAr": "العضلة ثلاثية الرؤوس",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine",
+      "Bar/Rope"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل",
+      "بار/حبل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "vB5OHsJ3EMc",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Rope-Pushdown.gif",
+    "stepByStepInstructions": [
+      "Attach a straight bar or rope to a high cable pulley.",
+      "Stand facing the cable, elbows tucked at your sides.",
+      "Push the bar/rope down until your arms are fully extended.",
+      "Return slowly — control the eccentric."
+    ],
+    "stepByStepInstructionsAr": [
+      "ثبّت باراً مستقيماً أو حبلاً على بكرة الكيبل العلوية.",
+      "قف مواجهاً للجهاز والمرفقان ملتصقان بجانبيك.",
+      "ادفع البار/الحبل للأسفل حتى يمتدّ ذراعاك بالكامل.",
+      "عُد ببطء مع التحكم في مرحلة النزول."
+    ],
+    "commonMistakes": [
+      "Letting the elbows flare out — elbows stay locked at your sides.",
+      "Leaning forward with the whole torso.",
+      "Not fully extending at the bottom."
+    ],
+    "commonMistakesAr": [
+      "تفتيح المرفقين للخارج — يجب أن يبقيا مثبّتين بجانبيك.",
+      "الميل للأمام بكامل الجذع.",
+      "عدم المدّ الكامل في الأسفل."
+    ],
+    "breathingCue": "Exhale on the pushdown; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء الدفع للأسفل، واستنشق أثناء العودة.",
+    "safetyNote": "If using a rope, spread the ends at the bottom for a better contraction.",
+    "safetyNoteAr": "عند استخدام الحبل، افتح طرفيه في الأسفل لانقباض أفضل.",
+    "category": "arms",
+    "status": "yes"
+  },
+  "overhead_tricep_ext": {
+    "name": "Overhead Tricep Extension (Cable)",
+    "nameAr": "مدّ العضلة ثلاثية الرؤوس فوق الرأس بالكيبل",
+    "primaryMuscleGroup": "Triceps",
+    "primaryMuscleGroupAr": "العضلة ثلاثية الرؤوس",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine",
+      "Rope"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل",
+      "حبل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "YbX7Wd8jQ-Q",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Cable-Rope-Overhead-Triceps-Extension.gif",
+    "stepByStepInstructions": [
+      "Set the cable at the highest position, attach a rope.",
+      "Face away from the cable, hold the rope behind your head.",
+      "Extend your arms forward/upward overhead until fully locked out.",
+      "Lower slowly back behind your head, feeling the long head of the tricep stretch."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط الكيبل على أعلى وضع وثبّت الحبل.",
+      "أدر ظهرك للجهاز وامسك الحبل خلف رأسك.",
+      "مُدّ ذراعيك للأمام/الأعلى فوق رأسك حتى التثبيت الكامل.",
+      "أنزلهما ببطء خلف رأسك مع الشعور بتمدد الرأس الطويل للعضلة."
+    ],
+    "commonMistakes": [
+      "Letting the elbows flare out wide.",
+      "Using too much weight and losing elbow position."
+    ],
+    "commonMistakesAr": [
+      "تفتيح المرفقين للخارج بشكل واسع.",
+      "استخدام وزن ثقيل وفقدان وضع المرفقين."
+    ],
+    "breathingCue": "Exhale on the extension; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء المدّ، واستنشق أثناء العودة.",
+    "safetyNote": "Keep the core braced to avoid excessive lower back arch.",
+    "safetyNoteAr": "أبقِ جذعك مشدوداً لتجنّب تقويس أسفل الظهر.",
+    "category": "arms",
+    "status": "yes"
+  },
+  "pull_up": {
+    "name": "Pull-Up (Bodyweight)",
+    "nameAr": "العقلة (وزن الجسم)",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Rear Deltoids",
+      "Core"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الكتف الخلفي",
+      "عضلات الجذع"
+    ],
+    "equipment": [
+      "Pull-Up Bar"
+    ],
+    "equipmentAr": [
+      "بار العقلة"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "eGo4IYlbE5g",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pull-up.gif",
+    "stepByStepInstructions": [
+      "Hang from the bar, arms fully extended, palms facing away (overhand).",
+      "Depress and retract your shoulder blades before initiating the pull.",
+      "Pull your elbows down toward your hips, bringing your chin over the bar.",
+      "Lower yourself slowly back to a dead hang."
+    ],
+    "stepByStepInstructionsAr": [
+      "تعلّق من البار والذراعان ممدودتان بالكامل وراحتا اليدين للأمام.",
+      "اخفض واسحب لوحي كتفيك للخلف قبل بدء السحب.",
+      "اسحب مرفقيك للأسفل نحو وركيك حتى يتجاوز ذقنك البار.",
+      "أنزل نفسك ببطء إلى التعليق الكامل."
+    ],
+    "commonMistakes": [
+      "Kipping or swinging — use strict form for strength development.",
+      "Not achieving a full range of motion at the bottom.",
+      "Pulling with the biceps rather than initiating with the lats."
+    ],
+    "commonMistakesAr": [
+      "الأرجحة أو الاندفاع — استخدم أداءً منضبطاً لتطوير القوة.",
+      "عدم إكمال مدى الحركة في الأسفل.",
+      "السحب بالعضلة ذات الرأسين بدل البدء بعضلات الظهر."
+    ],
+    "breathingCue": "Exhale on the pull up; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء السحب للأعلى، واستنشق أثناء النزول.",
+    "safetyNote": "Progress by adding reps/sets before adding external load.",
+    "safetyNoteAr": "تدرّج بزيادة التكرارات/المجموعات قبل إضافة وزن خارجي.",
+    "category": "pull_vertical",
+    "status": "yes"
+  },
+  "seated_cable_row": {
+    "name": "Seated Cable Row",
+    "nameAr": "التجديف بالكيبل جالساً",
+    "primaryMuscleGroup": "Back",
+    "primaryMuscleGroupAr": "الظهر",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Rear Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الكتف الخلفي"
+    ],
+    "equipment": [
+      "Cable Machine",
+      "Row Handle"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل",
+      "مقبض تجديف"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "GZbfZ033f74",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Seated-Cable-Row.gif",
+    "stepByStepInstructions": [
+      "Sit on the bench, feet on the platform, knees slightly bent.",
+      "Hold the handle with arms extended and a flat back.",
+      "Row the handle to your lower chest, pulling elbows back.",
+      "Squeeze shoulder blades at the top, then extend arms fully before the next rep."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس على المقعد والقدمان على المنصة والركبتان مثنيتان قليلاً.",
+      "أمسك المقبض والذراعان ممدودتان والظهر مستقيم.",
+      "اسحب المقبض إلى أسفل صدرك ساحباً مرفقيك للخلف.",
+      "اعصر لوحي كتفيك في الأعلى ثم مُدّ ذراعيك بالكامل قبل التكرار التالي."
+    ],
+    "commonMistakes": [
+      "Rocking back — the torso should stay roughly upright.",
+      "Using arm strength only — initiate with the shoulder blade retraction.",
+      "Not fully extending at the start — you lose the lat stretch."
+    ],
+    "commonMistakesAr": [
+      "التأرجح للخلف — يجب أن يبقى الجذع منتصباً تقريباً.",
+      "الاعتماد على قوة الذراعين فقط — ابدأ بسحب لوحي الكتف.",
+      "عدم المدّ الكامل في البداية — تفقد تمدد عضلة الظهر."
+    ],
+    "breathingCue": "Exhale on the pull; inhale on the extension.",
+    "breathingCueAr": "ازفر أثناء السحب، واستنشق أثناء المدّ.",
+    "safetyNote": "Keep a neutral spine. Do not round the lower back by leaning too far forward.",
+    "safetyNoteAr": "حافظ على استقامة العمود الفقري، ولا تقوّس أسفل ظهرك بالميل المفرط للأمام.",
+    "category": "pull_horizontal",
+    "status": "yes"
+  },
+  "lat_pulldown_bar": {
+    "name": "Lat Pulldown (Bar)",
+    "nameAr": "السحب الأمامي بالبار",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Rear Deltoids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الكتف الخلفي"
+    ],
+    "equipment": [
+      "Cable Machine",
+      "Lat Pulldown Bar"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل",
+      "بار سحب أمامي"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "CAwf7n6Luuc",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Lat-Pulldown.gif",
+    "stepByStepInstructions": [
+      "Grip the bar wider than shoulder width, overhand grip.",
+      "Sit with thighs secured under the pad, lean back slightly.",
+      "Pull the bar to your upper chest, elbows driving down and back.",
+      "Return the bar under control — let the arms fully extend."
+    ],
+    "stepByStepInstructionsAr": [
+      "أمسك البار بقبضة أوسع من الكتفين وراحتا اليدين للأمام.",
+      "اجلس مع تثبيت فخذيك تحت الوسادة ومِل للخلف قليلاً.",
+      "اسحب البار إلى أعلى صدرك مع دفع مرفقيك للأسفل والخلف.",
+      "أعد البار بتحكّم ودع ذراعيك يمتدّان بالكامل."
+    ],
+    "commonMistakes": [
+      "Pulling behind the neck.",
+      "Swinging the torso excessively backward.",
+      "Not achieving full arm extension at the top."
+    ],
+    "commonMistakesAr": [
+      "السحب خلف الرقبة.",
+      "أرجحة الجذع للخلف بشكل مبالغ.",
+      "عدم مدّ الذراعين بالكامل في الأعلى."
+    ],
+    "breathingCue": "Exhale on the pull down; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء السحب للأسفل، واستنشق أثناء العودة.",
+    "safetyNote": "Never pull behind the neck. Always pull to your chest.",
+    "safetyNoteAr": "لا تسحب خلف الرقبة أبداً، بل دائماً إلى صدرك.",
+    "category": "pull_vertical",
+    "status": "yes"
+  },
+  "rear_delt_fly": {
+    "name": "Rear Delt Fly (Machine)",
+    "nameAr": "رفرفة الكتف الخلفي بالجهاز",
+    "primaryMuscleGroup": "Rear Deltoids",
+    "primaryMuscleGroupAr": "الكتف الخلفي",
+    "secondaryMuscleGroups": [
+      "Traps",
+      "Rhomboids"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة شبه المنحرفة",
+      "العضلات المعينية"
+    ],
+    "equipment": [
+      "Pec Deck Machine"
+    ],
+    "equipmentAr": [
+      "جهاز البيك ديك"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "dQqKtcjMM6E",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Rear-Delt-Machine-Flys.gif",
+    "stepByStepInstructions": [
+      "Adjust the pec deck machine so the handles are at shoulder height.",
+      "Sit facing the pad, grasp the handles with a neutral grip.",
+      "Pull the handles out and back, keeping a slight bend in the elbows.",
+      "Squeeze the rear delts at the end range, then return slowly."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط الجهاز بحيث يكون المقبضان بارتفاع الكتف.",
+      "اجلس مواجهاً للوسادة وأمسك المقبضين بقبضة محايدة.",
+      "اسحب المقبضين للخارج والخلف مع ثنية بسيطة في المرفقين.",
+      "اعصر الكتف الخلفي في نهاية المدى ثم عُد ببطء."
+    ],
+    "commonMistakes": [
+      "Going too heavy and using trap momentum.",
+      "Fully extending the elbows — maintain a soft bend.",
+      "Not getting full range of motion."
+    ],
+    "commonMistakesAr": [
+      "استخدام وزن ثقيل والاعتماد على اندفاع العضلة شبه المنحرفة.",
+      "مدّ المرفقين بالكامل — حافظ على ثنية خفيفة.",
+      "عدم إكمال مدى الحركة."
+    ],
+    "breathingCue": "Exhale as you open the arms; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء فتح الذراعين، واستنشق أثناء العودة.",
+    "safetyNote": "Use a moderate weight — the rear delt is a small muscle and easy to overtrain.",
+    "safetyNoteAr": "استخدم وزناً معتدلاً — الكتف الخلفي عضلة صغيرة يسهل إجهادها.",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "incline_db_curl": {
+    "name": "Incline DB Curl",
+    "nameAr": "مرجحة الدمبل على المقعد المائل",
+    "primaryMuscleGroup": "Biceps",
+    "primaryMuscleGroupAr": "العضلة ذات الرأسين",
+    "secondaryMuscleGroups": [
+      "Brachialis"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة العضدية"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Incline Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد مائل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "soxrZlIl35U",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Seated-Incline-Dumbbell-Curl.gif",
+    "stepByStepInstructions": [
+      "Set a bench to 45–60 degrees. Sit back and let the dumbbells hang at your sides.",
+      "Curl both dumbbells up, supinating (rotating the palms) as you go.",
+      "Squeeze at the top, then lower slowly."
+    ],
+    "stepByStepInstructionsAr": [
+      "اضبط المقعد على 45–60 درجة، واستلقِ للخلف ودع الدمبلين متدلّيين بجانبيك.",
+      "ارفع الدمبلين مع تدوير راحتي اليدين للأعلى أثناء الرفع.",
+      "اعصر في الأعلى ثم انزل ببطء."
+    ],
+    "commonMistakes": [
+      "Swinging the elbows forward — elbows should stay pinned at your sides.",
+      "Not supinating fully — the rotation is key for peak bicep contraction."
+    ],
+    "commonMistakesAr": [
+      "تحريك المرفقين للأمام — يجب أن يبقيا مثبّتين بجانبيك.",
+      "عدم تدوير الراحتين بالكامل — التدوير أساسي لأقصى انقباض للعضلة."
+    ],
+    "breathingCue": "Exhale on the curl; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "The incline position puts the bicep in a stretched position — avoid jerking.",
+    "safetyNoteAr": "وضع الميل يضع العضلة في تمدد — تجنّب الحركة الاندفاعية.",
+    "category": "arms",
+    "status": "yes"
+  },
+  "hammer_curl": {
+    "name": "Hammer Curl",
+    "nameAr": "مرجحة المطرقة",
+    "primaryMuscleGroup": "Brachialis",
+    "primaryMuscleGroupAr": "العضلة العضدية",
+    "secondaryMuscleGroups": [
+      "Biceps",
+      "Forearms"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة ذات الرأسين",
+      "الساعدان"
+    ],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "zC3nLlEvin4",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Hammer-Curl.gif",
+    "stepByStepInstructions": [
+      "Stand with dumbbells at your sides, palms facing each other (neutral grip).",
+      "Keep elbows fixed and curl the dumbbells upward.",
+      "Lower slowly back to the start."
+    ],
+    "stepByStepInstructionsAr": [
+      "قف والدمبلان بجانبيك وراحتا اليدين متقابلتان (قبضة محايدة).",
+      "أبقِ مرفقيك ثابتين وارفع الدمبلين للأعلى.",
+      "أنزلهما ببطء إلى البداية."
+    ],
+    "commonMistakes": [
+      "Swinging the elbows forward.",
+      "Using momentum from the hips."
+    ],
+    "commonMistakesAr": [
+      "تحريك المرفقين للأمام.",
+      "استخدام اندفاع من الوركين."
+    ],
+    "breathingCue": "Exhale on the curl; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "Neutral grip reduces wrist strain. Good choice for those with supination discomfort.",
+    "safetyNoteAr": "القبضة المحايدة تقلّل إجهاد الرسغ، وخيار جيد لمن يشعر بألم عند تدوير الراحة.",
+    "category": "arms",
+    "status": "yes"
+  },
+  "hack_squat": {
+    "name": "Hack Squat",
+    "nameAr": "الهاك سكوات",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [
+      "Glutes",
+      "Hamstrings"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "عضلات المؤخرة",
+      "أوتار الركبة"
+    ],
+    "equipment": [
+      "Hack Squat Machine"
+    ],
+    "equipmentAr": [
+      "جهاز هاك سكوات"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "UD4VNGPZmLI",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2022/10/Reverse-Hack-Squat.gif",
+    "stepByStepInstructions": [
+      "Position shoulders and back against the pads, feet at the bottom of the platform.",
+      "Release the safety handles and descend until your knees reach 90° or below.",
+      "Drive through your whole foot back to the top, not fully locking the knees out."
+    ],
+    "stepByStepInstructionsAr": [
+      "ضع كتفيك وظهرك على الوسائد وقدميك في أسفل المنصة.",
+      "حرّر مقابض الأمان وانزل حتى تصل ركبتاك إلى 90° أو أقل.",
+      "ادفع بكامل قدمك للعودة للأعلى دون تثبيت الركبتين بالكامل."
+    ],
+    "commonMistakes": [
+      "Feet too high — shifts emphasis to the glutes.",
+      "Knees caving inward.",
+      "Cutting the range of motion short."
+    ],
+    "commonMistakesAr": [
+      "رفع القدمين عالياً — ينقل التركيز إلى عضلات المؤخرة.",
+      "انطباق الركبتين للداخل.",
+      "تقصير مدى الحركة."
+    ],
+    "breathingCue": "Inhale on the descent; exhale on the press.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر أثناء الدفع.",
+    "safetyNote": "Do not squat so deep that your lower back rounds off the pad.",
+    "safetyNoteAr": "لا تنزل عميقاً لدرجة يتقوّس فيها أسفل ظهرك عن الوسادة.",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "hip_thrust": {
+    "name": "Barbell Hip Thrust",
+    "nameAr": "دفع الورك بالبار",
+    "primaryMuscleGroup": "Glutes",
+    "primaryMuscleGroupAr": "عضلات المؤخرة",
+    "secondaryMuscleGroups": [
+      "Hamstrings",
+      "Core"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "أوتار الركبة",
+      "عضلات الجذع"
+    ],
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "xDmFkJxPzeM",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2022/02/Hip-Thrust-Machine.gif",
+    "stepByStepInstructions": [
+      "Sit on the floor with your upper back against a bench. Roll the bar over your hips.",
+      "Plant feet flat, hip-width apart, toes slightly out.",
+      "Drive your hips upward until your body forms a straight line from shoulders to knees.",
+      "Squeeze the glutes hard at the top, then lower with control."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس على الأرض وأعلى ظهرك مسند على مقعد، ومرّر البار فوق وركيك.",
+      "ثبّت قدميك مسطّحتين بعرض الوركين وأصابع القدمين للخارج قليلاً.",
+      "ادفع وركيك للأعلى حتى يشكّل جسمك خطاً مستقيماً من الكتفين إلى الركبتين.",
+      "اعصر عضلات المؤخرة بقوة في الأعلى ثم انزل بتحكّم."
+    ],
+    "commonMistakes": [
+      "Hyperextending the lower back at the top — keep a neutral spine.",
+      "Feet too far from the body — reduces glute activation.",
+      "Not driving the hips fully at the top."
+    ],
+    "commonMistakesAr": [
+      "فرط مدّ أسفل الظهر في الأعلى — حافظ على استقامة العمود الفقري.",
+      "إبعاد القدمين كثيراً عن الجسم — يقلّل تفعيل عضلات المؤخرة.",
+      "عدم دفع الوركين بالكامل في الأعلى."
+    ],
+    "breathingCue": "Exhale and squeeze at the top; inhale on the descent.",
+    "breathingCueAr": "ازفر واعصر في الأعلى، واستنشق أثناء النزول.",
+    "safetyNote": "Use a barbell pad to protect your hip bones from the bar.",
+    "safetyNoteAr": "استخدم وسادة للبار لحماية عظام الورك من الضغط.",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "bulgarian_split_squat": {
+    "name": "Bulgarian Split Squat",
+    "nameAr": "السكوات البلغاري المنفصل",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [
+      "Glutes",
+      "Hamstrings",
+      "Core"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "عضلات المؤخرة",
+      "أوتار الركبة",
+      "عضلات الجذع"
+    ],
+    "equipment": [
+      "Dumbbells",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "youtubeVideoId": "2C-uNgKwPLE",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Dumbbell-Bulgarian-Split-Squat.gif",
+    "stepByStepInstructions": [
+      "Stand in front of a bench, one foot elevated behind you.",
+      "Hold dumbbells at your sides and stand far enough from the bench that your front shin is roughly vertical at the bottom.",
+      "Lower your back knee toward the floor, keeping your torso upright.",
+      "Drive through your front heel to return to the top."
+    ],
+    "stepByStepInstructionsAr": [
+      "قف أمام مقعد وارفع قدماً واحدة خلفك عليه.",
+      "أمسك الدمبلين بجانبيك وقف بعيداً بما يكفي ليكون ساق قدمك الأمامية عمودياً تقريباً في الأسفل.",
+      "أنزل ركبتك الخلفية نحو الأرض مع إبقاء جذعك منتصباً.",
+      "ادفع بكعب قدمك الأمامية للعودة للأعلى."
+    ],
+    "commonMistakes": [
+      "Front foot too close — causes knee to track past the toes.",
+      "Leaning too far forward — maintain an upright torso.",
+      "Back foot too high on the bench — reduces stability."
+    ],
+    "commonMistakesAr": [
+      "قرب القدم الأمامية أكثر من اللازم — يجعل الركبة تتجاوز أصابع القدم.",
+      "الميل للأمام كثيراً — حافظ على جذع منتصب.",
+      "رفع القدم الخلفية عالياً على المقعد — يقلّل الثبات."
+    ],
+    "breathingCue": "Inhale on the descent; exhale as you drive up.",
+    "breathingCueAr": "استنشق أثناء النزول، وازفر أثناء الدفع للأعلى.",
+    "safetyNote": "Find your foot placement carefully before loading. Balance is key.",
+    "safetyNoteAr": "حدّد موضع قدمك بعناية قبل إضافة الوزن، فالتوازن هو الأساس.",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "leg_extension": {
+    "name": "Leg Extension",
+    "nameAr": "تمديد الأرجل بالجهاز",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Leg Extension Machine"
+    ],
+    "equipmentAr": [
+      "جهاز تمديد الأرجل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "YyvSfVjQeL0",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/LEG-EXTENSION.gif",
+    "stepByStepInstructions": [
+      "Sit in the machine, adjust the pad so it rests just above the ankle.",
+      "Extend your legs until fully straight, squeezing the quads.",
+      "Lower slowly — do not let the weight stack slam down."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس في الجهاز واضبط الوسادة بحيث تستقر أعلى الكاحل مباشرة.",
+      "مُدّ ساقيك حتى الاستقامة الكاملة مع عصر عضلة الفخذ الأمامية.",
+      "أنزل ببطء ولا تدع الأوزان ترتطم للأسفل."
+    ],
+    "commonMistakes": [
+      "Using momentum and swinging the legs.",
+      "Not achieving full extension.",
+      "Letting the hips lift off the seat."
+    ],
+    "commonMistakesAr": [
+      "استخدام الاندفاع وأرجحة الساقين.",
+      "عدم تحقيق المدّ الكامل.",
+      "رفع الوركين عن المقعد."
+    ],
+    "breathingCue": "Exhale on the extension; inhale on the return.",
+    "breathingCueAr": "ازفر أثناء المدّ، واستنشق أثناء العودة.",
+    "safetyNote": "Avoid excessive load if you have knee pain. Full extension is fine for healthy knees.",
+    "safetyNoteAr": "تجنّب الأوزان الثقيلة إذا كنت تعاني من ألم في الركبة. المدّ الكامل آمن للركب السليمة.",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "lying_leg_curl": {
+    "name": "Lying Leg Curl",
+    "nameAr": "ثني الأرجل استلقاءً",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [
+      "Calves"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "السمانة (بطة الساق)"
+    ],
+    "equipment": [
+      "Leg Curl Machine"
+    ],
+    "equipmentAr": [
+      "جهاز ثني الأرجل"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "1Tq3QdYUuHs",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Leg-Curl.gif",
+    "stepByStepInstructions": [
+      "Lie face down on the machine, pad just above the heels.",
+      "Curl your legs toward your glutes as far as possible.",
+      "Squeeze the hamstrings at the top.",
+      "Lower slowly back to the start."
+    ],
+    "stepByStepInstructionsAr": [
+      "استلقِ على بطنك على الجهاز والوسادة أعلى كعبيك مباشرة.",
+      "اثنِ ساقيك نحو مؤخرتك قدر المستطاع.",
+      "اعصر أوتار الركبة في الأعلى.",
+      "أنزل ببطء إلى البداية."
+    ],
+    "commonMistakes": [
+      "Lifting the hips off the pad.",
+      "Using momentum — control both the concentric and eccentric."
+    ],
+    "commonMistakesAr": [
+      "رفع الوركين عن الوسادة.",
+      "استخدام الاندفاع — تحكّم في مرحلتي الرفع والنزول."
+    ],
+    "breathingCue": "Exhale on the curl; inhale on the extension.",
+    "breathingCueAr": "ازفر أثناء الثني، واستنشق أثناء المدّ.",
+    "safetyNote": "Adjust the machine pad height before adding load.",
+    "safetyNoteAr": "اضبط ارتفاع وسادة الجهاز قبل إضافة الوزن.",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "seated_calf_raise": {
+    "name": "Seated Calf Raise",
+    "nameAr": "رفع السمانة جالساً",
+    "primaryMuscleGroup": "Soleus",
+    "primaryMuscleGroupAr": "العضلة النعلية",
+    "secondaryMuscleGroups": [
+      "Gastrocnemius"
+    ],
+    "secondaryMuscleGroupsAr": [
+      "العضلة التوأمية"
+    ],
+    "equipment": [
+      "Seated Calf Raise Machine"
+    ],
+    "equipmentAr": [
+      "جهاز السمانة جالساً"
+    ],
+    "difficulty": "beginner",
+    "youtubeVideoId": "JbyjNymZOt0",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Lever-Seated-Calf-Raise.gif",
+    "stepByStepInstructions": [
+      "Sit in the machine, pads resting just above the knees.",
+      "Place the balls of your feet on the platform edge.",
+      "Lower your heels as far as comfortable to get a deep stretch.",
+      "Drive up onto your toes as high as possible, squeezing the calves."
+    ],
+    "stepByStepInstructionsAr": [
+      "اجلس في الجهاز والوسادتان أعلى ركبتيك مباشرة.",
+      "ضع مقدمة قدميك على حافة المنصة.",
+      "أنزل كعبيك قدر المستطاع للحصول على تمدد عميق.",
+      "ارتفع على أطراف أصابعك لأعلى ما يمكن مع عصر السمانة."
+    ],
+    "commonMistakes": [
+      "Not going through full range of motion.",
+      "Bouncing at the bottom."
+    ],
+    "commonMistakesAr": [
+      "عدم أداء مدى الحركة كاملاً.",
+      "الارتداد في الأسفل."
+    ],
+    "breathingCue": "Exhale on the raise; inhale on the descent.",
+    "breathingCueAr": "ازفر أثناء الرفع، واستنشق أثناء النزول.",
+    "safetyNote": "The seated position emphasises the soleus (deeper calf muscle). Include both standing and seated variations.",
+    "safetyNoteAr": "الوضع الجالس يركّز على العضلة النعلية (الأعمق في السمانة). أدرِج النسختين الواقفة والجالسة.",
+    "category": "calves",
+    "status": "yes"
+  },
+  "lunges": {
+    "name": "Lunges (Barbell / DB)",
+    "nameAr": "",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Barbell-Lunge.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "step_ups": {
+    "name": "Step Ups",
+    "nameAr": "",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/12/Dumbeel-Step-Up.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "goblet_squat": {
+    "name": "Goblet Squat",
+    "nameAr": "",
+    "primaryMuscleGroup": "Quadriceps",
+    "primaryMuscleGroupAr": "العضلة رباعية الرؤوس (الفخذ الأمامي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2023/01/Dumbbell-Goblet-Squat.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "lower_quad",
+    "status": "yes"
+  },
+  "conventional_deadlift": {
+    "name": "Conventional Deadlift",
+    "nameAr": "",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "advanced",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Deadlift.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "posterior",
+    "status": "sub"
+  },
+  "sumo_deadlift": {
+    "name": "Sumo Deadlift",
+    "nameAr": "",
+    "primaryMuscleGroup": "Glutes",
+    "primaryMuscleGroupAr": "عضلات المؤخرة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "advanced",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Barbell-Sumo-Deadlift.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "posterior",
+    "status": "sub"
+  },
+  "stiff_leg_deadlift": {
+    "name": "Stiff Leg Deadlift",
+    "nameAr": "",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2022/01/Stiff-Leg-Deadlift.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "glute_bridge": {
+    "name": "Glute Bridge",
+    "nameAr": "",
+    "primaryMuscleGroup": "Glutes",
+    "primaryMuscleGroupAr": "عضلات المؤخرة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "بار حديد"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/12/Barbell-Glute-Bridge.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "posterior",
+    "status": "yes"
+  },
+  "nordic_curl": {
+    "name": "Nordic Curl",
+    "nameAr": "",
+    "primaryMuscleGroup": "Hamstrings",
+    "primaryMuscleGroupAr": "أوتار الركبة (الفخذ الخلفي)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "equipmentAr": [
+      "وزن الجسم"
+    ],
+    "difficulty": "advanced",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Nordic-Hamstring-Curl.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "posterior",
+    "status": "sub"
+  },
+  "db_bench_press": {
+    "name": "Dumbbell Bench Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Press-1.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "decline_press": {
+    "name": "Decline Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/03/Decline-Barbell-Bench-Press.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "cable_fly": {
+    "name": "Cable Fly",
+    "nameAr": "",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Cable-Crossover.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "db_fly": {
+    "name": "Dumbbell Fly",
+    "nameAr": "",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Fly.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "pec_dec": {
+    "name": "Pec Dec (Machine)",
+    "nameAr": "",
+    "primaryMuscleGroup": "Chest",
+    "primaryMuscleGroupAr": "الصدر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Pec Deck Machine"
+    ],
+    "equipmentAr": [
+      "جهاز البيك ديك"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pec-Deck-Fly.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_horizontal",
+    "status": "yes"
+  },
+  "arnold_press": {
+    "name": "Arnold Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Shoulders",
+    "primaryMuscleGroupAr": "الأكتاف",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Arnold-Press.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "seated_machine_press": {
+    "name": "Seated Machine Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Shoulders",
+    "primaryMuscleGroupAr": "الأكتاف",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Machine"
+    ],
+    "equipmentAr": [
+      "جهاز"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Lever-Shoulder-Press.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "landmine_press": {
+    "name": "Landmine Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Shoulders",
+    "primaryMuscleGroupAr": "الأكتاف",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Landmine",
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "لاندماين",
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Landmine-Press.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_vertical",
+    "status": "yes"
+  },
+  "rear_delt_fly_db": {
+    "name": "Rear Delt Fly (DB)",
+    "nameAr": "",
+    "primaryMuscleGroup": "Rear Deltoids",
+    "primaryMuscleGroupAr": "الكتف الخلفي",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Reverse-Fly.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_vertical",
+    "status": "sub"
+  },
+  "face_pull": {
+    "name": "Face Pull (Cable)",
+    "nameAr": "",
+    "primaryMuscleGroup": "Rear Deltoids",
+    "primaryMuscleGroupAr": "الكتف الخلفي",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Face-Pull.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "push_vertical",
+    "status": "sub"
+  },
+  "db_row": {
+    "name": "Dumbbell Row",
+    "nameAr": "",
+    "primaryMuscleGroup": "Back",
+    "primaryMuscleGroupAr": "الظهر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_horizontal",
+    "status": "yes"
+  },
+  "machine_row": {
+    "name": "Machine Row",
+    "nameAr": "",
+    "primaryMuscleGroup": "Back",
+    "primaryMuscleGroupAr": "الظهر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Machine"
+    ],
+    "equipmentAr": [
+      "جهاز"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2023/06/Lever-High-Row.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_horizontal",
+    "status": "yes"
+  },
+  "chest_supported_row": {
+    "name": "Chest Supported Row",
+    "nameAr": "",
+    "primaryMuscleGroup": "Back",
+    "primaryMuscleGroupAr": "الظهر",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells",
+      "Incline Bench"
+    ],
+    "equipmentAr": [
+      "دمبل",
+      "مقعد مائل"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Lever-T-bar-Row.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_horizontal",
+    "status": "sub"
+  },
+  "chin_up": {
+    "name": "Chin Up",
+    "nameAr": "",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Pull-Up Bar"
+    ],
+    "equipmentAr": [
+      "بار العقلة"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/03/Chin-Up.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_vertical",
+    "status": "sub"
+  },
+  "single_arm_pulldown": {
+    "name": "Single Arm Pulldown",
+    "nameAr": "",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Half-Kneeling-Lat-Pulldown.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_vertical",
+    "status": "yes"
+  },
+  "straight_arm_pulldown": {
+    "name": "Straight Arm Pulldown",
+    "nameAr": "",
+    "primaryMuscleGroup": "Lats",
+    "primaryMuscleGroupAr": "العضلة الظهرية العريضة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Cable-Straight-Arm-Pulldown.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "pull_vertical",
+    "status": "yes"
+  },
+  "db_curl": {
+    "name": "Dumbbell Curl",
+    "nameAr": "",
+    "primaryMuscleGroup": "Biceps",
+    "primaryMuscleGroupAr": "العضلة ذات الرأسين",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Dumbbells"
+    ],
+    "equipmentAr": [
+      "دمبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Curl.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "arms",
+    "status": "yes"
+  },
+  "cable_curl": {
+    "name": "Cable Curl",
+    "nameAr": "",
+    "primaryMuscleGroup": "Biceps",
+    "primaryMuscleGroupAr": "العضلة ذات الرأسين",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/cable-curl.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "arms",
+    "status": "yes"
+  },
+  "preacher_curl_machine": {
+    "name": "Preacher Curl (Machine)",
+    "nameAr": "",
+    "primaryMuscleGroup": "Biceps",
+    "primaryMuscleGroupAr": "العضلة ذات الرأسين",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Preacher Machine"
+    ],
+    "equipmentAr": [
+      "جهاز الپريتشر"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Lever-Preacher-Curl.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "arms",
+    "status": "yes"
+  },
+  "close_grip_bench": {
+    "name": "Close Grip Bench Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Triceps",
+    "primaryMuscleGroupAr": "العضلة ثلاثية الرؤوس",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Barbell",
+      "Bench"
+    ],
+    "equipmentAr": [
+      "بار حديد",
+      "مقعد (بنش)"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Close-Grip-Bench-Press.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "arms",
+    "status": "sub"
+  },
+  "skull_crushers": {
+    "name": "Skull Crushers",
+    "nameAr": "",
+    "primaryMuscleGroup": "Triceps",
+    "primaryMuscleGroupAr": "العضلة ثلاثية الرؤوس",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "EZ Bar"
+    ],
+    "equipmentAr": [
+      "بار EZ"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Triceps-Extension.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "arms",
+    "status": "yes"
+  },
+  "plank": {
+    "name": "Plank",
+    "nameAr": "",
+    "primaryMuscleGroup": "Core",
+    "primaryMuscleGroupAr": "عضلات الجذع",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Bodyweight"
+    ],
+    "equipmentAr": [
+      "وزن الجسم"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/plank.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "core",
+    "status": "yes"
+  },
+  "cable_crunch": {
+    "name": "Cable Crunch",
+    "nameAr": "",
+    "primaryMuscleGroup": "Abs",
+    "primaryMuscleGroupAr": "عضلات البطن",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Kneeling-Cable-Crunch.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "core",
+    "status": "sub"
+  },
+  "pallof_press": {
+    "name": "Pallof Press",
+    "nameAr": "",
+    "primaryMuscleGroup": "Obliques",
+    "primaryMuscleGroupAr": "العضلات المائلة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Cable Machine"
+    ],
+    "equipmentAr": [
+      "جهاز كيبل"
+    ],
+    "difficulty": "beginner",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "core",
+    "status": "sub"
+  },
+  "landmine_rotation": {
+    "name": "Landmine Rotation",
+    "nameAr": "",
+    "primaryMuscleGroup": "Obliques",
+    "primaryMuscleGroupAr": "العضلات المائلة",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Landmine",
+      "Barbell"
+    ],
+    "equipmentAr": [
+      "لاندماين",
+      "بار حديد"
+    ],
+    "difficulty": "intermediate",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Landmine-Twist.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "core",
+    "status": "yes"
+  },
+  "leg_press_calf_raise": {
+    "name": "Leg Press Calf Raise",
+    "nameAr": "",
+    "primaryMuscleGroup": "Calves",
+    "primaryMuscleGroupAr": "السمانة (بطة الساق)",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Leg Press Machine"
+    ],
+    "equipmentAr": [
+      "جهاز دفع الأرجل"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": "https://fitnessprogramer.com/wp-content/uploads/2021/05/Leg-Press-Calf-Raise.gif",
+    "stepByStepInstructions": [],
+    "stepByStepInstructionsAr": [],
+    "commonMistakes": [],
+    "commonMistakesAr": [],
+    "breathingCue": "",
+    "breathingCueAr": "",
+    "safetyNote": "",
+    "safetyNoteAr": "",
+    "category": "calves",
+    "status": "yes"
+  }
+}
