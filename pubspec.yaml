@@ -1,0 +1,67 @@
+name: my_coach
+description: A personal fitness companion built around your 12-week programme.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Local storage (offline, no backend)
+  shared_preferences: ^2.3.2
+
+  # State + Navigation
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.8.0
+
+  # Networking & Images
+  http: ^1.2.0
+  cached_network_image: ^3.4.1
+
+  # Charts + Calendar
+  fl_chart: ^0.70.2
+  table_calendar: ^3.1.3
+
+  # Media & URL
+  url_launcher: ^6.3.1
+
+  # UI / Animation
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+
+  # Device
+  vibration: ^2.0.0
+  audioplayers: ^6.4.0
+  wakelock_plus: ^1.2.10
+
+  # Utilities
+  intl: ^0.20.2
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  background_color_hex: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/audio/
