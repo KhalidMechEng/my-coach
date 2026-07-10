@@ -11,11 +11,12 @@ class AppSpacing {
   static const double huge = 48.0;
   static const double massive = 64.0;
 
-  static const double cardRadius = 16.0;
+  static const double cardRadius = 20.0;
   static const double buttonRadius = 14.0;
-  static const double chipRadius = 8.0;
-  static const double inputRadius = 12.0;
+  static const double chipRadius = 12.0;
+  static const double inputRadius = 14.0;
+  static const double thumbRadius = 14.0;
 
-  static const double bottomNavHeight = 80.0;
+  static const double bottomNavHeight = 64.0;
   static const double appBarHeight = 56.0;
 }

@@ -38,7 +38,7 @@ class AppTheme {
       brightness: dark ? Brightness.dark : Brightness.light,
       scaffoldBackgroundColor: AppColors.background,
       colorScheme: scheme,
-      fontFamily: 'SF Pro Display',
+      fontFamily: 'Thmanyah Sans',
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.background,
         foregroundColor: AppColors.textPrimary,

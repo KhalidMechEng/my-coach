@@ -7,6 +7,7 @@ import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/l10n/app_strings.dart';
 import '../../../../core/utils/image_url.dart';
+import '../../../../shared/widgets/empty_state.dart';
 import '../../../../shared/widgets/loading_indicator.dart';
 import '../../domain/models/exercise.dart';
 import '../providers/exercise_provider.dart';
@@ -117,8 +118,12 @@ class _ExerciseLibraryScreenState extends ConsumerState<ExerciseLibraryScreen> {
               ),
               Expanded(
                 child: children.isEmpty
-                    ? Center(child: Text(l10n.pick('No results', 'لا نتائج'),
-                        style: AppTextStyles.bodyMedium.copyWith(color: AppColors.textTertiary)))
+                    ? EmptyState(
+                        emoji: '🔍',
+                        title: l10n.pick('No results', 'لا نتائج'),
+                        message: l10n.pick(
+                            'Try a different search or filter.', 'جرّب بحثاً أو فلتراً مختلفاً.'),
+                      )
                     : ListView(
                         padding: const EdgeInsets.only(bottom: AppSpacing.xxl),
                         children: children,
@@ -181,6 +186,7 @@ class _ExerciseTile extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.navy,
           borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
+          boxShadow: AppColors.cardShadow,
         ),
         padding: const EdgeInsets.all(AppSpacing.sm),
         child: Row(
@@ -202,7 +208,7 @@ class _ExerciseTile extends StatelessWidget {
                       Flexible(
                         child: Text(
                           exercise.localizedPrimaryMuscle(ar),
-                          style: AppTextStyles.bodySmall.copyWith(color: const Color(0xFFB8C7D1)),
+                          style: AppTextStyles.bodySmall.copyWith(color: AppColors.onNavySecondary),
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
@@ -233,11 +239,11 @@ class _ExerciseTile extends StatelessWidget {
                 height: 76,
                 child: thumb != null
                     ? Container(
-                        color: Colors.white,
+                        color: AppColors.thumbBackground,
                         child: CachedNetworkImage(
                           imageUrl: webSafeImageUrl(thumb),
                           fit: BoxFit.cover,
-                          placeholder: (_, __) => Container(color: Colors.white),
+                          placeholder: (_, __) => Container(color: AppColors.thumbBackground),
                           errorWidget: (_, __, ___) => _placeholder(),
                         ),
                       )
@@ -251,7 +257,7 @@ class _ExerciseTile extends StatelessWidget {
   }
 
   Widget _placeholder() => Container(
-        color: Colors.white,
+        color: AppColors.thumbBackground,
         child: Center(child: Icon(Icons.fitness_center, color: AppColors.textTertiary)),
       );
 }

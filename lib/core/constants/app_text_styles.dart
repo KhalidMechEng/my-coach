@@ -4,7 +4,12 @@ import 'app_colors.dart';
 class AppTextStyles {
   AppTextStyles._();
 
+  /// Expressive serif reserved for hero/display moments — headlines & big
+  /// numbers. Body/UI text uses the Sans family from the theme's [fontFamily].
+  static const String _display = 'Thmanyah Serif Display';
+
   static TextStyle get displayLarge => TextStyle(
+    fontFamily: _display,
     fontSize: 36,
     fontWeight: FontWeight.w800,
     color: AppColors.textPrimary,
@@ -13,6 +18,7 @@ class AppTextStyles {
   );
 
   static TextStyle get displayMedium => TextStyle(
+    fontFamily: _display,
     fontSize: 28,
     fontWeight: FontWeight.w700,
     color: AppColors.textPrimary,
@@ -21,6 +27,7 @@ class AppTextStyles {
   );
 
   static TextStyle get headlineLarge => TextStyle(
+    fontFamily: _display,
     fontSize: 22,
     fontWeight: FontWeight.w700,
     color: AppColors.textPrimary,
@@ -88,18 +95,20 @@ class AppTextStyles {
   );
 
   static TextStyle get numericLarge => TextStyle(
+    fontFamily: _display,
     fontSize: 40,
     fontWeight: FontWeight.w800,
     color: AppColors.textPrimary,
     letterSpacing: -1,
-    fontFeatures: [FontFeature.tabularFigures()],
+    fontFeatures: const [FontFeature.tabularFigures()],
   );
 
   static TextStyle get numericMedium => TextStyle(
+    fontFamily: _display,
     fontSize: 24,
     fontWeight: FontWeight.w700,
     color: AppColors.textPrimary,
     letterSpacing: -0.5,
-    fontFeatures: [FontFeature.tabularFigures()],
+    fontFeatures: const [FontFeature.tabularFigures()],
   );
 }

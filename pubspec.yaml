@@ -65,3 +65,29 @@ flutter:
     - assets/data/
     - assets/images/
     - assets/audio/
+
+  # خط ثمانية (Thmanyah) — free for personal & commercial use.
+  # Sans = UI/body, Serif Display = headlines & big numbers. Supports Arabic + Latin.
+  fonts:
+    - family: Thmanyah Sans
+      fonts:
+        - asset: assets/fonts/ThmanyahSans-Light.otf
+          weight: 300
+        - asset: assets/fonts/ThmanyahSans-Regular.otf
+          weight: 400
+        - asset: assets/fonts/ThmanyahSans-Medium.otf
+          weight: 500
+        - asset: assets/fonts/ThmanyahSans-Bold.otf
+          weight: 700
+        - asset: assets/fonts/ThmanyahSans-Black.otf
+          weight: 900
+    - family: Thmanyah Serif Display
+      fonts:
+        - asset: assets/fonts/ThmanyahSerifDisplay-Regular.otf
+          weight: 400
+        - asset: assets/fonts/ThmanyahSerifDisplay-Medium.otf
+          weight: 500
+        - asset: assets/fonts/ThmanyahSerifDisplay-Bold.otf
+          weight: 700
+        - asset: assets/fonts/ThmanyahSerifDisplay-Black.otf
+          weight: 900

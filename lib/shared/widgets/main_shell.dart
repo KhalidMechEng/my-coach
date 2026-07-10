@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/constants/app_colors.dart';
+import '../../core/constants/app_spacing.dart';
 import '../../core/l10n/app_strings.dart';
 
 class MainShell extends ConsumerWidget {
@@ -38,11 +39,18 @@ class _BottomNav extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.surface,
-        border: Border(top: BorderSide(color: AppColors.divider, width: 0.5)),
+        border: Border(top: BorderSide(color: AppColors.cardBorder, width: 1)),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.isDark ? const Color(0x40000000) : const Color(0x0A14384F),
+            blurRadius: 20,
+            offset: const Offset(0, -4),
+          ),
+        ],
       ),
       child: SafeArea(
         child: SizedBox(
-          height: 60,
+          height: AppSpacing.bottomNavHeight,
           child: Row(
             children: [
               _NavItem(icon: Icons.home_rounded, label: l10n.navHome, index: 0, currentIndex: currentIndex, onTap: onTap),
@@ -76,6 +84,7 @@ class _NavItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isSelected = index == currentIndex;
+    final color = isSelected ? AppColors.primary : AppColors.textSecondary;
     return Expanded(
       child: GestureDetector(
         onTap: () => onTap(index),
@@ -83,18 +92,23 @@ class _NavItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              icon,
-              size: 24,
-              color: isSelected ? AppColors.primary : AppColors.textSecondary,
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 220),
+              curve: Curves.easeOut,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+              decoration: BoxDecoration(
+                color: isSelected ? AppColors.primaryContainer : Colors.transparent,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Icon(icon, size: 22, color: color),
             ),
-            const SizedBox(height: 2),
+            const SizedBox(height: 3),
             Text(
               label,
               style: TextStyle(
                 fontSize: 10,
-                fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-                color: isSelected ? AppColors.primary : AppColors.textSecondary,
+                fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                color: color,
               ),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,

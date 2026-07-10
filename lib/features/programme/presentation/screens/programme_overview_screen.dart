@@ -77,13 +77,7 @@ class _BlockCard extends StatelessWidget {
     required this.onWeekTap,
   });
 
-  static const _sessionColors = {
-    'upper': Color(0xFF3B82F6),
-    'lower': Color(0xFF8B5CF6),
-    'push': Color(0xFFEF4444),
-    'pull': Color(0xFF10B981),
-    'legs': Color(0xFFF59E0B),
-  };
+  static const _sessionColors = AppColors.muscleGroup;
 
   @override
   Widget build(BuildContext context) {
@@ -92,10 +86,12 @@ class _BlockCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.surface,
-          borderRadius: BorderRadius.circular(20),
-          border: isCurrent
-              ? Border.all(color: AppColors.primary, width: 2)
-              : null,
+          borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
+          border: Border.all(
+            color: isCurrent ? AppColors.primary : AppColors.cardBorder,
+            width: isCurrent ? 2 : 1,
+          ),
+          boxShadow: AppColors.cardShadow,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

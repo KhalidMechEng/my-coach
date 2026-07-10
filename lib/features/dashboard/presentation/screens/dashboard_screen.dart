@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
@@ -8,6 +9,7 @@ import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/utils/volume_calculator.dart';
 import '../../../../core/l10n/app_strings.dart';
+import '../../../../shared/widgets/app_card.dart';
 import '../../../../shared/widgets/section_header.dart';
 import '../providers/dashboard_provider.dart';
 
@@ -63,7 +65,10 @@ class DashboardScreen extends ConsumerWidget {
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
-                  child: _TodayCard(dash: dash, l10n: l10n),
+                  child: _TodayCard(dash: dash, l10n: l10n)
+                      .animate()
+                      .fadeIn(duration: 450.ms)
+                      .slideY(begin: 0.08, curve: Curves.easeOutCubic),
                 ),
               ),
 
@@ -81,7 +86,10 @@ class DashboardScreen extends ConsumerWidget {
                       const SizedBox(width: AppSpacing.md),
                       Expanded(child: _StatCard(label: l10n.pick('Consistency', 'الالتزام'), value: '${dash.consistencyPercent.round()}%')),
                     ],
-                  ),
+                  )
+                      .animate()
+                      .fadeIn(delay: 120.ms, duration: 450.ms)
+                      .slideY(begin: 0.1, curve: Curves.easeOutCubic),
                 ),
               ),
 
@@ -119,12 +127,8 @@ class DashboardScreen extends ConsumerWidget {
                       final s = dash.recentSessions[i];
                       return Padding(
                         padding: const EdgeInsets.fromLTRB(AppSpacing.lg, 0, AppSpacing.lg, AppSpacing.md),
-                        child: Container(
+                        child: AppCard(
                           padding: const EdgeInsets.all(AppSpacing.lg),
-                          decoration: BoxDecoration(
-                            color: AppColors.surface,
-                            borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-                          ),
                           child: Row(
                             children: [
                               Container(
@@ -224,18 +228,16 @@ class _TodayCard extends StatelessWidget {
     final today = dash.todaysWorkout;
 
     if (today == null) {
-      return Container(
+      return AppCard(
         padding: const EdgeInsets.all(AppSpacing.xxl),
-        decoration: BoxDecoration(
-          color: AppColors.surface,
-          borderRadius: BorderRadius.circular(20),
-        ),
         child: Column(
           children: [
-            const Text('🛌', style: TextStyle(fontSize: 36)),
-            const SizedBox(height: 8),
+            const Text('🛌', style: TextStyle(fontSize: 40)),
+            const SizedBox(height: AppSpacing.sm),
             Text(l10n.pick('Rest Day', 'يوم راحة'), style: AppTextStyles.headlineMedium),
-            Text(l10n.pick('Recover and come back stronger.', 'استعد وارجع أقوى.'), style: AppTextStyles.bodySmall),
+            const SizedBox(height: 2),
+            Text(l10n.pick('Recover and come back stronger.', 'استعد وارجع أقوى.'),
+                textAlign: TextAlign.center, style: AppTextStyles.bodySmall),
           ],
         ),
       );
@@ -249,28 +251,68 @@ class _TodayCard extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: [AppColors.navy, AppColors.navyDark],
         ),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(l10n.pick('Today', 'اليوم'), style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w700, letterSpacing: 1)),
-          const SizedBox(height: 4),
-          Text(l10n.sessionLabel(today.sessionType),
-              style: AppTextStyles.headlineLarge.copyWith(color: AppColors.textInverse)),
-          const SizedBox(height: 4),
-          Text(
-            '${today.exerciseCount} ${l10n.pick('exercises', 'تمرين')} · ${today.exercises.map((e) => e.sets).fold(0, (a, b) => a + b)} ${l10n.pick('total sets', 'مجموعة')}',
-            style: AppTextStyles.bodySmall.copyWith(color: const Color(0xFFB8C7D1)),
+        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
+        border: Border.all(color: AppColors.primary.withValues(alpha: 0.22), width: 1),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.navy.withValues(alpha: 0.35),
+            blurRadius: 24,
+            offset: const Offset(0, 12),
           ),
-          const SizedBox(height: AppSpacing.lg),
-          SizedBox(
-            width: double.infinity,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () => context.push('/programme/week/${dash.currentWeek}'),
-              child: Text(l10n.pick('Start Workout', 'ابدأ التمرين'), style: const TextStyle(fontWeight: FontWeight.w700)),
+        ],
+      ),
+      child: Stack(
+        children: [
+          // Soft teal glow anchored top-right for depth.
+          Positioned(
+            top: -30,
+            right: -20,
+            child: Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [AppColors.primary.withValues(alpha: 0.28), Colors.transparent],
+                ),
+              ),
             ),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    width: 7,
+                    height: 7,
+                    decoration: BoxDecoration(color: AppColors.primary, shape: BoxShape.circle),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(l10n.pick('TODAY', 'اليوم'),
+                      style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
+                ],
+              ),
+              const SizedBox(height: 6),
+              Text(l10n.sessionLabel(today.sessionType),
+                  style: AppTextStyles.headlineLarge.copyWith(color: AppColors.onNavy)),
+              const SizedBox(height: 4),
+              Text(
+                '${today.exerciseCount} ${l10n.pick('exercises', 'تمرين')} · ${today.exercises.map((e) => e.sets).fold(0, (a, b) => a + b)} ${l10n.pick('total sets', 'مجموعة')}',
+                style: AppTextStyles.bodySmall.copyWith(color: AppColors.onNavySecondary),
+              ),
+              const SizedBox(height: AppSpacing.xl),
+              SizedBox(
+                width: double.infinity,
+                height: 52,
+                child: ElevatedButton.icon(
+                  onPressed: () => context.push('/programme/week/${dash.currentWeek}'),
+                  icon: const Icon(Icons.play_arrow_rounded, size: 22),
+                  label: Text(l10n.pick('Start Workout', 'ابدأ التمرين'),
+                      style: const TextStyle(fontWeight: FontWeight.w700)),
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -285,16 +327,12 @@ class _StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AppCard(
       padding: const EdgeInsets.all(AppSpacing.lg),
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(value, style: AppTextStyles.numericMedium),
+          Text(value, style: AppTextStyles.numericMedium.copyWith(color: AppColors.primary)),
           const SizedBox(height: 2),
           Text(label, style: AppTextStyles.bodySmall),
         ],
@@ -310,13 +348,10 @@ class _VolumeChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final maxVal = data.map((d) => d.volume).fold(0.0, (a, b) => a > b ? a : b);
-    return Container(
-      height: 160,
+    return AppCard(
       padding: const EdgeInsets.fromLTRB(AppSpacing.md, AppSpacing.lg, AppSpacing.md, AppSpacing.sm),
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-      ),
+      child: SizedBox(
+      height: 132,
       child: BarChart(
         BarChartData(
           maxY: maxVal * 1.2 + 1,
@@ -365,6 +400,7 @@ class _VolumeChart extends StatelessWidget {
             );
           }).toList(),
         ),
+      ),
       ),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shimmer/shimmer.dart';
 import '../../core/constants/app_colors.dart';
+import '../../core/constants/app_spacing.dart';
 
 class LoadingIndicator extends StatelessWidget {
   final String? message;
@@ -34,17 +36,22 @@ class ShimmerCard extends StatelessWidget {
     super.key,
     this.height = 80,
     this.width,
-    this.borderRadius = 16,
+    this.borderRadius = AppSpacing.cardRadius,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width: width ?? double.infinity,
-      decoration: BoxDecoration(
-        color: AppColors.surfaceElevated,
-        borderRadius: BorderRadius.circular(borderRadius),
+    return Shimmer.fromColors(
+      baseColor: AppColors.surfaceElevated,
+      highlightColor: AppColors.surface,
+      period: const Duration(milliseconds: 1200),
+      child: Container(
+        height: height,
+        width: width ?? double.infinity,
+        decoration: BoxDecoration(
+          color: AppColors.surfaceElevated,
+          borderRadius: BorderRadius.circular(borderRadius),
+        ),
       ),
     );
   }

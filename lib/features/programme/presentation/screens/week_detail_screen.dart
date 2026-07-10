@@ -332,16 +332,16 @@ class _ExerciseThumb extends ConsumerWidget {
     return GestureDetector(
       onTap: () => context.push('/exercise/$exerciseId'),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(AppSpacing.thumbRadius),
         child: Container(
           width: 52,
           height: 52,
-          color: Colors.white,
+          color: AppColors.thumbBackground,
           child: url != null
               ? CachedNetworkImage(
                   imageUrl: webSafeImageUrl(url),
                   fit: BoxFit.cover,
-                  placeholder: (_, __) => Container(color: Colors.white),
+                  placeholder: (_, __) => Container(color: AppColors.thumbBackground),
                   errorWidget: (_, __, ___) => Icon(Icons.fitness_center,
                       size: 20, color: AppColors.textTertiary),
                 )

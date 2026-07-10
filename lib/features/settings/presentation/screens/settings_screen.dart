@@ -101,10 +101,10 @@ class _OptionTile extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.lg),
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: selected ? AppColors.primaryContainer : AppColors.surface,
             borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
             border: Border.all(
-              color: selected ? AppColors.primary : Colors.transparent,
+              color: selected ? AppColors.primary : AppColors.cardBorder,
               width: 1.5,
             ),
           ),

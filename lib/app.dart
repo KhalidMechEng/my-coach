@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'core/constants/app_colors.dart';
 import 'core/l10n/app_strings.dart';
 import 'core/providers/locale_provider.dart';
 import 'core/providers/theme_provider.dart';
@@ -37,8 +38,10 @@ class MyCoachApp extends ConsumerWidget {
         return LayoutBuilder(
           builder: (context, constraints) {
             if (constraints.maxWidth <= 500) return child!;
+            // Letterbox "desk" behind the phone frame — theme-aware so it isn't a
+            // glaring light slab in dark mode.
             return ColoredBox(
-              color: const Color(0xFFE7ECEF),
+              color: AppColors.isDark ? const Color(0xFF060D13) : const Color(0xFFE7ECEF),
               child: Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(24),
