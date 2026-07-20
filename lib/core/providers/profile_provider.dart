@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../services/local_store.dart';
+import '../../data/programme/programme_data.dart';
 
 const _profileKey = 'user_profile';
 
@@ -66,10 +67,8 @@ class ProfileNotifier extends StateNotifier<UserProfile> {
   }
 
   int _blockForWeek(int week) {
-    if (week <= 4) return 1;
-    if (week <= 8) return 2;
-    if (week <= 11) return 3;
-    return 4;
+    // Single Upper/Lower block spans all 12 weeks.
+    return blockForWeek(week).blockNumber;
   }
 }
 

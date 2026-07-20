@@ -41,11 +41,11 @@ class ProgrammeOverviewScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
-          Text(l10n.pick('12-Week Block Periodisation', 'برنامج تدرّج على 12 أسبوع'), style: AppTextStyles.headlineLarge),
+          Text(l10n.pick('Upper / Lower · 4-Day Split', 'تقسيمة علوي / سفلي · 4 أيام'), style: AppTextStyles.headlineLarge),
           const SizedBox(height: AppSpacing.sm),
           Text(
-            l10n.pick('Upper · Lower · Push · Pull · Legs  |  Mon–Fri',
-                'علوي · سفلي · دفع · سحب · أرجل  |  الإثنين–الجمعة'),
+            l10n.pick('Upper A · Lower A · Upper B · Lower B  |  Mon · Tue · Thu · Fri',
+                'علوي أ · سفلي أ · علوي ب · سفلي ب  |  الإثنين · الثلاثاء · الخميس · الجمعة'),
             style: AppTextStyles.bodySmall,
           ),
           const SizedBox(height: AppSpacing.xxl),

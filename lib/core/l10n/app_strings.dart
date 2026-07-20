@@ -83,6 +83,14 @@ class L10n {
 
   String sessionLabel(String type) {
     switch (type) {
+      case 'upper_a':
+        return ar ? 'علوي أ — الصدر' : 'Upper A — Chest';
+      case 'lower_a':
+        return ar ? 'سفلي أ — الأمامية' : 'Lower A — Quad';
+      case 'upper_b':
+        return ar ? 'علوي ب — الظهر' : 'Upper B — Back';
+      case 'lower_b':
+        return ar ? 'سفلي ب — الخلفية' : 'Lower B — Hamstring';
       case 'upper':
         return ar ? 'الجزء العلوي' : 'Upper Body';
       case 'lower':
@@ -101,7 +109,7 @@ class L10n {
   String blockName(int number) {
     switch (number) {
       case 1:
-        return ar ? 'التراكم' : 'Accumulation';
+        return ar ? 'تقسيمة علوي / سفلي' : 'Upper / Lower Split';
       case 2:
         return ar ? 'الشدّة' : 'Intensity';
       case 3:

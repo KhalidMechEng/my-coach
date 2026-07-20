@@ -83,6 +83,10 @@ class AppColors {
 
   // ── Muscle-group accents (fixed; used for chips/badges in both themes) ──────
   static const Map<String, Color> muscleGroup = {
+    'upper_a': Color(0xFF3B82F6),
+    'lower_a': Color(0xFF8B5CF6),
+    'upper_b': Color(0xFF10B981),
+    'lower_b': Color(0xFFF59E0B),
     'upper': Color(0xFF3B82F6),
     'lower': Color(0xFF8B5CF6),
     'push': Color(0xFFEF4444),
