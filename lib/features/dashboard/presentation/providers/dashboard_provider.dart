@@ -45,7 +45,8 @@ final dashboardProvider = Provider<DashboardState>((ref) {
   final streak = _computeStreak(completedSessions);
 
   // Consistency: sessions completed vs sessions scheduled in current block
-  final weekdaysInBlock = currentBlock.weekCount * 5; // 5 training days per week
+  final weekdaysInBlock =
+      currentBlock.weekCount * currentBlock.workoutDays.length; // training days per week
   final blockSessions = completedSessions
       .where((s) => s.blockNumber == currentBlock.blockNumber)
       .length;
