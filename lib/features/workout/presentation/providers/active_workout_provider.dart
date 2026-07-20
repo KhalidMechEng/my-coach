@@ -140,6 +140,23 @@ class ActiveWorkoutNotifier extends StateNotifier<ActiveWorkoutState> {
     _advanceSet(exerciseId);
   }
 
+  /// Marks the current set done for time-based work (cardio) — no weight/reps,
+  /// so it contributes no volume and is excluded from PR detection.
+  void completeTimeBasedSet(String exerciseId) {
+    final logs = Map<String, List<SetLog>>.from(state.setLogs);
+    final exerciseLogs = List<SetLog>.from(logs[exerciseId] ?? []);
+
+    if (state.currentSetIndex < exerciseLogs.length) {
+      exerciseLogs[state.currentSetIndex] = exerciseLogs[state.currentSetIndex].copyWith(
+        status: SetStatus.completed,
+      );
+    }
+
+    logs[exerciseId] = exerciseLogs;
+    state = state.copyWith(setLogs: logs);
+    _advanceSet(exerciseId);
+  }
+
   void skipSet(String exerciseId) {
     final logs = Map<String, List<SetLog>>.from(state.setLogs);
     final exerciseLogs = List<SetLog>.from(logs[exerciseId] ?? []);

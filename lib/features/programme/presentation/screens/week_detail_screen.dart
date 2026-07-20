@@ -243,29 +243,32 @@ class _ExerciseRowState extends ConsumerState<_ExerciseRow> {
               ),
             ],
           ),
-          const SizedBox(height: AppSpacing.md),
-          Row(
-            children: [
-              // Weight input
-              SizedBox(
-                width: 120,
-                child: TextField(
-                  controller: _controller,
-                  keyboardType: const TextInputType.numberWithOptions(decimal: true),
-                  inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.]'))],
-                  onChanged: (v) => notifier.setWeight(
-                      widget.week, id, double.tryParse(v.trim())),
-                  decoration: InputDecoration(
-                    isDense: true,
-                    hintText: l10n.pick('Weight', 'الوزن'),
-                    suffixText: widget.unit,
+          // Time-based work (cardio) logs no weight — the done tick is enough.
+          if (!widget.prescription.isTimeBased) ...[
+            const SizedBox(height: AppSpacing.md),
+            Row(
+              children: [
+                // Weight input
+                SizedBox(
+                  width: 120,
+                  child: TextField(
+                    controller: _controller,
+                    keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                    inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.]'))],
+                    onChanged: (v) => notifier.setWeight(
+                        widget.week, id, double.tryParse(v.trim())),
+                    decoration: InputDecoration(
+                      isDense: true,
+                      hintText: l10n.pick('Weight', 'الوزن'),
+                      suffixText: widget.unit,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: AppSpacing.md),
-              Expanded(child: _Comparison(prev: prev, delta: delta, unit: widget.unit, l10n: l10n)),
-            ],
-          ),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(child: _Comparison(prev: prev, delta: delta, unit: widget.unit, l10n: l10n)),
+              ],
+            ),
+          ],
         ],
       ),
     );

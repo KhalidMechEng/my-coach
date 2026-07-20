@@ -158,8 +158,14 @@ class _GuidedWorkoutScreenState extends ConsumerState<GuidedWorkoutScreen> {
                           isDone: isDone,
                           isSkipped: log.isSkipped,
                           prescription: prescription,
+                          isTimeBased: prescription.isTimeBased,
                           prefilledWeight: log.weightKg,
                           prefilledReps: log.reps,
+                          onCompleteTimeBased: isCurrent
+                              ? () {
+                                  ref.read(activeWorkoutProvider.notifier).completeTimeBasedSet(currentEx.exerciseId);
+                                }
+                              : null,
                           onComplete: isCurrent
                               ? (reps, weight, rpe) {
                                   ref.read(activeWorkoutProvider.notifier).completeSet(
@@ -296,9 +302,11 @@ class _SetCard extends StatefulWidget {
   final bool isDone;
   final bool isSkipped;
   final dynamic prescription;
+  final bool isTimeBased;
   final double? prefilledWeight;
   final int? prefilledReps;
   final void Function(int reps, double weight, double? rpe)? onComplete;
+  final VoidCallback? onCompleteTimeBased;
   final VoidCallback? onSkip;
 
   const _SetCard({
@@ -307,9 +315,11 @@ class _SetCard extends StatefulWidget {
     required this.isDone,
     required this.isSkipped,
     required this.prescription,
+    this.isTimeBased = false,
     this.prefilledWeight,
     this.prefilledReps,
     this.onComplete,
+    this.onCompleteTimeBased,
     this.onSkip,
   });
 
@@ -398,7 +408,31 @@ class _SetCardState extends State<_SetCard> {
             ],
           ),
 
-          if (widget.isCurrent && !widget.isDone) ...[
+          // Cardio / time-based work: show duration only, single Done button.
+          if (widget.isCurrent && !widget.isDone && widget.isTimeBased) ...[
+            const SizedBox(height: AppSpacing.lg),
+            Row(
+              children: [
+                Icon(Icons.directions_run, color: AppColors.primary, size: 22),
+                const SizedBox(width: AppSpacing.sm),
+                Text(
+                  widget.prescription.repRange,
+                  style: AppTextStyles.headlineMedium.copyWith(color: AppColors.textPrimary),
+                ),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.md),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(minimumSize: const Size(0, 50)),
+                onPressed: widget.onCompleteTimeBased,
+                child: const Text('Done', style: TextStyle(fontWeight: FontWeight.w700)),
+              ),
+            ),
+          ],
+
+          if (widget.isCurrent && !widget.isDone && !widget.isTimeBased) ...[
             const SizedBox(height: AppSpacing.lg),
             Row(
               children: [

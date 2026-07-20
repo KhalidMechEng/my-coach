@@ -26,7 +26,11 @@ class ExercisePrescription {
     return 'RPE $targetRpe';
   }
 
-  String get prescriptionSummary => '$sets × $repRange @ $rpeDisplay';
+  /// Time/duration-based work (e.g. cardio) logs no weight or reps.
+  bool get isTimeBased => repRange.toLowerCase().contains('min');
+
+  String get prescriptionSummary =>
+      isTimeBased ? repRange : '$sets × $repRange @ $rpeDisplay';
 
   String get restDisplay {
     if (restSeconds >= 60) {
