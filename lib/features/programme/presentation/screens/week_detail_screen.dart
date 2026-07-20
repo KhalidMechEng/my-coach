@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../core/extensions/datetime_ext.dart';
 import '../../../../core/l10n/app_strings.dart';
 import '../../../../core/providers/profile_provider.dart';
 import '../../../../core/utils/image_url.dart';
@@ -26,9 +27,10 @@ class WeekDetailScreen extends ConsumerWidget {
     final l10n = ref.watch(l10nProvider);
     final unit = ref.watch(profileProvider).unit;
 
-    // Open on today's weekday tab when it falls Mon–Fri.
-    final todayIdx = DateTime.now().weekday - 1; // 0=Mon .. 6=Sun
-    final initialIndex = (todayIdx >= 0 && todayIdx < block.workoutDays.length) ? todayIdx : 0;
+    // Open on today's session tab when today is a training day.
+    final todayKey = DateTime.now().weekdayKey;
+    final todayIdx = block.workoutDays.indexWhere((d) => d.dayOfWeek == todayKey);
+    final initialIndex = todayIdx >= 0 ? todayIdx : 0;
 
     return DefaultTabController(
       length: block.workoutDays.length,

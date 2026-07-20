@@ -58,13 +58,13 @@ final dashboardProvider = Provider<DashboardState>((ref) {
   final weeklyVolumeMap = <DateTime, double>{};
   final now = DateTime.now();
   for (var i = 0; i < 8; i++) {
-    final monday = _mondayOfWeek(now.subtract(Duration(days: i * 7)));
-    weeklyVolumeMap[monday] = 0;
+    final weekStart = _weekStart(now.subtract(Duration(days: i * 7)));
+    weeklyVolumeMap[weekStart] = 0;
   }
   for (final s in completedSessions) {
-    final monday = _mondayOfWeek(s.startTime);
-    if (weeklyVolumeMap.containsKey(monday)) {
-      weeklyVolumeMap[monday] = weeklyVolumeMap[monday]! + (s.totalVolume ?? 0);
+    final weekStart = _weekStart(s.startTime);
+    if (weeklyVolumeMap.containsKey(weekStart)) {
+      weeklyVolumeMap[weekStart] = weeklyVolumeMap[weekStart]! + (s.totalVolume ?? 0);
     }
   }
   final weeklyVolume = weeklyVolumeMap.entries
@@ -132,6 +132,8 @@ final dashboardProvider = Provider<DashboardState>((ref) {
   return (current, longest);
 }
 
-DateTime _mondayOfWeek(DateTime date) {
-  return date.subtract(Duration(days: date.weekday - 1));
+DateTime _weekStart(DateTime date) {
+  // Week starts on Sunday (Sun–Thu training week). weekday: Mon=1..Sun=7.
+  final startOfDay = DateTime(date.year, date.month, date.day);
+  return startOfDay.subtract(Duration(days: date.weekday % 7));
 }

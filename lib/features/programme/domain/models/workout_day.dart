@@ -17,11 +17,13 @@ class WorkoutDay {
 
   String get dayAbbrev {
     const map = {
+      'sunday': 'SUN',
       'monday': 'MON',
       'tuesday': 'TUE',
       'wednesday': 'WED',
       'thursday': 'THU',
       'friday': 'FRI',
+      'saturday': 'SAT',
     };
     return map[dayOfWeek] ?? dayOfWeek.substring(0, 3).toUpperCase();
   }

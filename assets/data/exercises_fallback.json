@@ -2421,5 +2421,53 @@
     "safetyNoteAr": "",
     "category": "calves",
     "status": "yes"
+  },
+  "cardio_session": {
+    "name": "Steady-State Cardio",
+    "nameAr": "كارديو ثابت الشدّة",
+    "primaryMuscleGroup": "Cardiovascular",
+    "primaryMuscleGroupAr": "الجهاز القلبي التنفسي",
+    "secondaryMuscleGroups": [],
+    "secondaryMuscleGroupsAr": [],
+    "equipment": [
+      "Treadmill",
+      "Bike",
+      "Rower",
+      "Stairmaster"
+    ],
+    "equipmentAr": [
+      "سير كهربائي",
+      "دراجة",
+      "جهاز تجديف",
+      "درج متحرك"
+    ],
+    "difficulty": "beginner",
+    "gifUrl": null,
+    "stepByStepInstructions": [
+      "Pick any machine: incline treadmill walk, bike, rower, or stairmaster.",
+      "Keep a steady, conversational pace you can hold for the full duration.",
+      "Aim for 25–40 minutes at RPE 6 (able to talk, slightly out of breath).",
+      "Optional: finish with 5 minutes easy to cool down."
+    ],
+    "stepByStepInstructionsAr": [
+      "اختر أي جهاز: مشي على سير بميلان، دراجة، تجديف، أو درج متحرك.",
+      "حافظ على إيقاع ثابت تقدر تكمّله طوال المدة وتقدر تتكلم خلاله.",
+      "استهدف 25–40 دقيقة بمجهود متوسط (RPE 6) — تنفّس أعلى قليلاً من الطبيعي.",
+      "اختياري: اختم بـ 5 دقائق خفيفة للتهدئة."
+    ],
+    "commonMistakes": [
+      "Going too hard — steady-state should stay easy/moderate, not a sprint.",
+      "Skipping it on a busy week — even 20 minutes counts."
+    ],
+    "commonMistakesAr": [
+      "المبالغة في الشدّة — الكارديو الثابت يبقى خفيف/متوسط وليس سباق.",
+      "تجاهله في الأسبوع المزدحم — حتى 20 دقيقة تُحسب."
+    ],
+    "breathingCue": "Breathe in a relaxed rhythm through the nose and mouth.",
+    "breathingCueAr": "تنفّس بإيقاع مريح من الأنف والفم.",
+    "safetyNote": "Stay hydrated. Reduce intensity if you feel dizzy or overly short of breath.",
+    "safetyNoteAr": "حافظ على الترطيب، وقلّل الشدّة إذا شعرت بدوخة أو ضيق نفس شديد.",
+    "category": "cardio",
+    "status": "yes"
   }
 }

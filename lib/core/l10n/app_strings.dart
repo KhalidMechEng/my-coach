@@ -91,6 +91,8 @@ class L10n {
         return ar ? 'علوي ب — الظهر' : 'Upper B — Back';
       case 'lower_b':
         return ar ? 'سفلي ب — الخلفية' : 'Lower B — Hamstring';
+      case 'cardio':
+        return ar ? 'كارديو' : 'Cardio';
       case 'upper':
         return ar ? 'الجزء العلوي' : 'Upper Body';
       case 'lower':

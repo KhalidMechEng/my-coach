@@ -41,11 +41,11 @@ class ProgrammeOverviewScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
-          Text(l10n.pick('Upper / Lower · 4-Day Split', 'تقسيمة علوي / سفلي · 4 أيام'), style: AppTextStyles.headlineLarge),
+          Text(l10n.pick('Upper / Lower · Sun–Thu', 'تقسيمة علوي / سفلي · الأحد–الخميس'), style: AppTextStyles.headlineLarge),
           const SizedBox(height: AppSpacing.sm),
           Text(
-            l10n.pick('Upper A · Lower A · Upper B · Lower B  |  Mon · Tue · Thu · Fri',
-                'علوي أ · سفلي أ · علوي ب · سفلي ب  |  الإثنين · الثلاثاء · الخميس · الجمعة'),
+            l10n.pick('Upper A · Lower A · Upper B · Lower B · Cardio  |  Sun–Thu',
+                'علوي أ · سفلي أ · علوي ب · سفلي ب · كارديو  |  الأحد–الخميس'),
             style: AppTextStyles.bodySmall,
           ),
           const SizedBox(height: AppSpacing.xxl),
