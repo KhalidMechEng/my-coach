@@ -10,7 +10,10 @@ import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/utils/volume_calculator.dart';
 import '../../../../core/l10n/app_strings.dart';
 import '../../../../shared/widgets/app_card.dart';
+import '../../../../shared/widgets/primary_button.dart';
 import '../../../../shared/widgets/section_header.dart';
+import '../../../../shared/widgets/stat_tile.dart';
+import '../../../../core/providers/profile_provider.dart';
 import '../providers/dashboard_provider.dart';
 
 class DashboardScreen extends ConsumerWidget {
@@ -20,6 +23,7 @@ class DashboardScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final dash = ref.watch(dashboardProvider);
     final l10n = ref.watch(l10nProvider);
+    final profileName = ref.watch(profileProvider.select((p) => p.name));
 
     return Scaffold(
       body: SafeArea(
@@ -34,27 +38,26 @@ class DashboardScreen extends ConsumerWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            _greeting(l10n),
-                            style: AppTextStyles.bodyMedium.copyWith(color: AppColors.textSecondary),
-                          ),
-                          Text(
-                            'Khalid',
-                            style: AppTextStyles.displayMedium,
-                          ),
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              _greeting(l10n),
+                              style: AppTextStyles.bodyMedium.copyWith(color: AppColors.textSecondary),
+                            ),
+                            Text(
+                              profileName.isNotEmpty ? profileName : l10n.athlete,
+                              style: AppTextStyles.displayMedium,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ),
                       ),
-                      Row(
-                        children: [
-                          _BlockBadge(block: dash.currentBlock, week: dash.currentWeek, l10n: l10n),
-                          IconButton(
-                            icon: Icon(Icons.settings_outlined, color: AppColors.textSecondary),
-                            onPressed: () => context.push('/settings'),
-                          ),
-                        ],
+                      IconButton(
+                        icon: Icon(Icons.settings_outlined, color: AppColors.textSecondary),
+                        onPressed: () => context.push('/settings'),
                       ),
                     ],
                   ),
@@ -80,11 +83,11 @@ class DashboardScreen extends ConsumerWidget {
                   padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
                   child: Row(
                     children: [
-                      Expanded(child: _StatCard(label: l10n.pick('Workouts', 'التمارين'), value: '${dash.totalWorkouts}')),
+                      Expanded(child: StatTile(label: l10n.pick('Workouts', 'التمارين'), value: '${dash.totalWorkouts}')),
                       const SizedBox(width: AppSpacing.md),
-                      Expanded(child: _StatCard(label: l10n.pick('Streak', 'التتابع'), value: '${dash.currentStreak}${l10n.pick('d', 'ي')}')),
+                      Expanded(child: StatTile(label: l10n.pick('Streak', 'التتابع'), value: '${dash.currentStreak}${l10n.pick('d', 'ي')}', emphasize: dash.currentStreak > 0)),
                       const SizedBox(width: AppSpacing.md),
-                      Expanded(child: _StatCard(label: l10n.pick('Consistency', 'الالتزام'), value: '${dash.consistencyPercent.round()}%')),
+                      Expanded(child: StatTile(label: l10n.pick('Consistency', 'الالتزام'), value: '${dash.consistencyPercent.round()}%')),
                     ],
                   )
                       .animate()
@@ -193,31 +196,6 @@ class DashboardScreen extends ConsumerWidget {
   }
 }
 
-class _BlockBadge extends StatelessWidget {
-  final int block;
-  final int week;
-  final L10n l10n;
-  const _BlockBadge({required this.block, required this.week, required this.l10n});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-      decoration: BoxDecoration(
-        color: AppColors.primaryContainer,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text('${l10n.block} $block', style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w700)),
-          Text('${l10n.week} $week', style: TextStyle(color: AppColors.primary, fontSize: 11)),
-        ],
-      ),
-    );
-  }
-}
-
 class _TodayCard extends StatelessWidget {
   final DashboardState dash;
   final L10n l10n;
@@ -243,98 +221,39 @@ class _TodayCard extends StatelessWidget {
       );
     }
 
-    return Container(
-      padding: const EdgeInsets.all(AppSpacing.xxl),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [AppColors.navy, AppColors.navyDark],
-        ),
-        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-        border: Border.all(color: AppColors.primary.withValues(alpha: 0.22), width: 1),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.navy.withValues(alpha: 0.35),
-            blurRadius: 24,
-            offset: const Offset(0, 12),
-          ),
-        ],
-      ),
-      child: Stack(
-        children: [
-          // Soft teal glow anchored top-right for depth.
-          Positioned(
-            top: -30,
-            right: -20,
-            child: Container(
-              width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: RadialGradient(
-                  colors: [AppColors.primary.withValues(alpha: 0.28), Colors.transparent],
-                ),
-              ),
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 7,
-                    height: 7,
-                    decoration: BoxDecoration(color: AppColors.primary, shape: BoxShape.circle),
-                  ),
-                  const SizedBox(width: 6),
-                  Text(l10n.pick('TODAY', 'اليوم'),
-                      style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
-                ],
-              ),
-              const SizedBox(height: 6),
-              Text(l10n.sessionLabel(today.sessionType),
-                  style: AppTextStyles.headlineLarge.copyWith(color: AppColors.onNavy)),
-              const SizedBox(height: 4),
-              Text(
-                '${today.exerciseCount} ${l10n.pick('exercises', 'تمرين')} · ${today.exercises.map((e) => e.sets).fold(0, (a, b) => a + b)} ${l10n.pick('total sets', 'مجموعة')}',
-                style: AppTextStyles.bodySmall.copyWith(color: AppColors.onNavySecondary),
-              ),
-              const SizedBox(height: AppSpacing.xl),
-              SizedBox(
-                width: double.infinity,
-                height: 52,
-                child: ElevatedButton.icon(
-                  onPressed: () => context.push('/programme/week/${dash.currentWeek}'),
-                  icon: const Icon(Icons.play_arrow_rounded, size: 22),
-                  label: Text(l10n.pick('Start Workout', 'ابدأ التمرين'),
-                      style: const TextStyle(fontWeight: FontWeight.w700)),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
+    final totalSets = today.exercises.map((e) => e.sets).fold(0, (a, b) => a + b);
 
-class _StatCard extends StatelessWidget {
-  final String label;
-  final String value;
-  const _StatCard({required this.label, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
     return AppCard(
-      padding: const EdgeInsets.all(AppSpacing.lg),
+      padding: const EdgeInsets.all(AppSpacing.xl),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(value, style: AppTextStyles.numericMedium.copyWith(color: AppColors.primary)),
-          const SizedBox(height: 2),
-          Text(label, style: AppTextStyles.bodySmall),
+          Row(
+            children: [
+              Container(
+                width: 7,
+                height: 7,
+                decoration: BoxDecoration(color: AppColors.primary, shape: BoxShape.circle),
+              ),
+              const SizedBox(width: 6),
+              Text(l10n.pick('TODAY', 'اليوم'),
+                  style: TextStyle(color: AppColors.primary, fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 1.5)),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Text(l10n.sessionLabel(today.sessionType), style: AppTextStyles.headlineLarge),
+          const SizedBox(height: 4),
+          Text(
+            '${today.exerciseCount} ${l10n.pick('exercises', 'تمرين')} · $totalSets ${l10n.pick('total sets', 'مجموعة')}',
+            style: AppTextStyles.bodySmall,
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          PrimaryButton(
+            label: l10n.pick('Start Workout', 'ابدأ التمرين'),
+            height: 52,
+            leading: const Icon(Icons.play_arrow_rounded, size: 22),
+            onPressed: () => context.push('/programme/week/${dash.currentWeek}'),
+          ),
         ],
       ),
     );

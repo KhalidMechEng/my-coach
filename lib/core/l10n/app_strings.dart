@@ -146,6 +146,12 @@ class L10n {
 
   // Settings
   String get settings => ar ? 'الإعدادات' : 'Settings';
+  String get name => ar ? 'الاسم' : 'Name';
+  String get editName => ar ? 'تعديل الاسم' : 'Edit name';
+  String get yourName => ar ? 'اسمك' : 'Your name';
+  String get save => ar ? 'حفظ' : 'Save';
+  String get cancel => ar ? 'إلغاء' : 'Cancel';
+  String get athlete => ar ? 'المتدرّب' : 'Athlete';
   String get language => ar ? 'اللغة' : 'Language';
   String get arabic => 'العربية';
   String get english => 'English';

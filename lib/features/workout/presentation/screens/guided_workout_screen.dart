@@ -5,10 +5,18 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../shared/widgets/app_card.dart';
 import '../../../../shared/widgets/pr_badge.dart';
 import '../../../programme/presentation/providers/programme_provider.dart';
+import '../../../programme/presentation/providers/week_log_provider.dart';
 import '../../../timer/presentation/providers/timer_provider.dart';
 import '../providers/active_workout_provider.dart';
+
+/// First integer in a rep range like "5–8" / "10" — the target to prefill.
+int? _topReps(String repRange) {
+  final match = RegExp(r'\d+').firstMatch(repRange);
+  return match != null ? int.tryParse(match.group(0)!) : null;
+}
 
 class GuidedWorkoutScreen extends ConsumerStatefulWidget {
   const GuidedWorkoutScreen({super.key});
@@ -114,43 +122,42 @@ class _GuidedWorkoutScreenState extends ConsumerState<GuidedWorkoutScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       // Exercise header
-                      GestureDetector(
+                      AppCard(
                         onTap: () => context.push('/exercise', extra: currentEx.exerciseId),
-                        child: Container(
-                          padding: const EdgeInsets.all(AppSpacing.lg),
-                          decoration: BoxDecoration(
-                            color: AppColors.surface,
-                            borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-                          ),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(currentEx.exerciseName, style: AppTextStyles.headlineMedium),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      prescription.prescriptionSummary,
-                                      style: AppTextStyles.bodySmall.copyWith(color: AppColors.primary),
-                                    ),
-                                  ],
-                                ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(currentEx.exerciseName, style: AppTextStyles.headlineMedium),
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    prescription.prescriptionSummary,
+                                    style: AppTextStyles.bodySmall.copyWith(color: AppColors.primary),
+                                  ),
+                                ],
                               ),
-                              Icon(Icons.info_outline, color: AppColors.textTertiary, size: 20),
-                            ],
-                          ),
+                            ),
+                            Icon(Icons.info_outline, color: AppColors.textTertiary, size: 20),
+                          ],
                         ),
                       ),
 
                       const SizedBox(height: AppSpacing.lg),
 
-                      // Set list
+                      // Set list — seed the working set from last week's logged
+                      // weight and the top of the prescribed rep range so a
+                      // repeat often becomes a single "Done" tap.
                       ...List.generate(prescription.sets, (i) {
                         final setIndex = i;
                         final log = (ref.watch(activeWorkoutProvider).setLogs[currentEx.exerciseId] ?? [])[i];
                         final isCurrent = setIndex == state.currentSetIndex;
                         final isDone = log.isDone;
+                        final week = ref.watch(currentWeekProvider);
+                        final lastWeight = ref.watch(weekLogProvider
+                            .select((m) => m[week - 1]?[currentEx.exerciseId]?.weight));
+                        final topReps = _topReps(prescription.repRange);
 
                         return _SetCard(
                           setNumber: i + 1,
@@ -159,8 +166,8 @@ class _GuidedWorkoutScreenState extends ConsumerState<GuidedWorkoutScreen> {
                           isSkipped: log.isSkipped,
                           prescription: prescription,
                           isTimeBased: prescription.isTimeBased,
-                          prefilledWeight: log.weightKg,
-                          prefilledReps: log.reps,
+                          prefilledWeight: log.weightKg ?? (isCurrent && !isDone ? lastWeight : null),
+                          prefilledReps: log.reps ?? (isCurrent && !isDone ? topReps : null),
                           onCompleteTimeBased: isCurrent
                               ? () {
                                   ref.read(activeWorkoutProvider.notifier).completeTimeBasedSet(currentEx.exerciseId);
@@ -349,20 +356,26 @@ class _SetCardState extends State<_SetCard> {
 
   @override
   Widget build(BuildContext context) {
-    Color borderColor;
-    if (widget.isSkipped) borderColor = AppColors.textTertiary;
-    else if (widget.isDone) borderColor = AppColors.success;
-    else if (widget.isCurrent) borderColor = AppColors.primary;
-    else borderColor = AppColors.divider;
+    // Two visual states only: the current set gets a teal border + full
+    // controls; every other set is a flat hairline card (done = teal check,
+    // skipped = muted dash).
+    final chipColor = widget.isSkipped
+        ? AppColors.textTertiary
+        : widget.isDone
+            ? AppColors.primary
+            : AppColors.surfaceElevated;
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       margin: const EdgeInsets.only(bottom: AppSpacing.md),
       padding: const EdgeInsets.all(AppSpacing.lg),
       decoration: BoxDecoration(
-        color: widget.isCurrent ? AppColors.surface : AppColors.surface.withOpacity(0.6),
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-        border: Border.all(color: borderColor, width: widget.isCurrent ? 2 : 1),
+        border: Border.all(
+          color: widget.isCurrent ? AppColors.primary : AppColors.cardBorder,
+          width: widget.isCurrent ? 2 : 1,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -373,11 +386,7 @@ class _SetCardState extends State<_SetCard> {
                 width: 28,
                 height: 28,
                 decoration: BoxDecoration(
-                  color: widget.isDone && !widget.isSkipped
-                      ? AppColors.success
-                      : widget.isSkipped
-                          ? AppColors.textTertiary
-                          : AppColors.surfaceElevated,
+                  color: chipColor,
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Center(
@@ -522,7 +531,7 @@ class _InputField extends StatelessWidget {
               ? const TextInputType.numberWithOptions(decimal: true)
               : TextInputType.number,
           textAlign: TextAlign.center,
-          style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w700),
+          style: AppTextStyles.numericSmall,
           decoration: InputDecoration(
             hintText: hint,
             hintStyle: TextStyle(color: AppColors.textTertiary, fontSize: 16),

@@ -9,12 +9,14 @@ const _profileKey = 'user_profile';
 class UserProfile {
   /// Fixed local id — the app has one user and no accounts.
   final String uid;
+  final String name;
   final int currentBlock;
   final int currentWeek;
   final String unitPreference; // 'kg' or 'lbs'
 
   const UserProfile({
     this.uid = 'local',
+    this.name = '',
     this.currentBlock = 1,
     this.currentWeek = 1,
     this.unitPreference = 'kg',
@@ -22,9 +24,10 @@ class UserProfile {
 
   String get unit => unitPreference;
 
-  UserProfile copyWith({int? currentBlock, int? currentWeek, String? unitPreference}) {
+  UserProfile copyWith({String? name, int? currentBlock, int? currentWeek, String? unitPreference}) {
     return UserProfile(
       uid: uid,
+      name: name ?? this.name,
       currentBlock: currentBlock ?? this.currentBlock,
       currentWeek: currentWeek ?? this.currentWeek,
       unitPreference: unitPreference ?? this.unitPreference,
@@ -33,6 +36,7 @@ class UserProfile {
 
   factory UserProfile.fromMap(Map<String, dynamic> map) {
     return UserProfile(
+      name: map['name'] as String? ?? '',
       currentBlock: (map['currentBlock'] as num?)?.toInt() ?? 1,
       currentWeek: (map['currentWeek'] as num?)?.toInt() ?? 1,
       unitPreference: map['unitPreference'] as String? ?? 'kg',
@@ -40,6 +44,7 @@ class UserProfile {
   }
 
   Map<String, dynamic> toMap() => {
+        'name': name,
         'currentBlock': currentBlock,
         'currentWeek': currentWeek,
         'unitPreference': unitPreference,
@@ -63,6 +68,11 @@ class ProfileNotifier extends StateNotifier<UserProfile> {
 
   Future<void> setUnit(String unit) async {
     state = state.copyWith(unitPreference: unit);
+    await _persist();
+  }
+
+  Future<void> setName(String name) async {
+    state = state.copyWith(name: name.trim());
     await _persist();
   }
 

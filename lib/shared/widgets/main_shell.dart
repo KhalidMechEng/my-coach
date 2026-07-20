@@ -40,13 +40,6 @@ class _BottomNav extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surface,
         border: Border(top: BorderSide(color: AppColors.cardBorder, width: 1)),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.isDark ? const Color(0x40000000) : const Color(0x0A14384F),
-            blurRadius: 20,
-            offset: const Offset(0, -4),
-          ),
-        ],
       ),
       child: SafeArea(
         child: SizedBox(

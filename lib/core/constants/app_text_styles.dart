@@ -111,4 +111,14 @@ class AppTextStyles {
     letterSpacing: -0.5,
     fontFeatures: const [FontFeature.tabularFigures()],
   );
+
+  /// Sans, tabular — for inline logged values (weight/reps) that must read at a
+  /// glance in the gym without the display serif's flourish.
+  static TextStyle get numericSmall => TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    color: AppColors.textPrimary,
+    letterSpacing: -0.2,
+    fontFeatures: const [FontFeature.tabularFigures()],
+  );
 }

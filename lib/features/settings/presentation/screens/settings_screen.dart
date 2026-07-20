@@ -23,6 +23,14 @@ class SettingsScreen extends ConsumerWidget {
       body: ListView(
         padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
+          _SectionLabel(l10n.name),
+          _ValueTile(
+            label: profile.name.isNotEmpty ? profile.name : l10n.athlete,
+            actionIcon: Icons.edit_outlined,
+            onTap: () => _editName(context, ref, l10n, profile.name),
+          ),
+          const SizedBox(height: AppSpacing.xxl),
+
           _SectionLabel(l10n.language),
           _OptionTile(
             label: l10n.english,
@@ -61,6 +69,66 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () => ref.read(isDarkModeProvider.notifier).setDark(true),
           ),
         ],
+      ),
+    );
+  }
+}
+
+Future<void> _editName(BuildContext context, WidgetRef ref, L10n l10n, String current) async {
+  final controller = TextEditingController(text: current);
+  final result = await showDialog<String>(
+    context: context,
+    builder: (ctx) => AlertDialog(
+      backgroundColor: AppColors.surface,
+      title: Text(l10n.editName, style: AppTextStyles.headlineMedium),
+      content: TextField(
+        controller: controller,
+        autofocus: true,
+        textCapitalization: TextCapitalization.words,
+        style: AppTextStyles.bodyLarge,
+        decoration: InputDecoration(hintText: l10n.yourName),
+        onSubmitted: (v) => Navigator.pop(ctx, v),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.pop(ctx), child: Text(l10n.cancel)),
+        TextButton(
+          onPressed: () => Navigator.pop(ctx, controller.text),
+          child: Text(l10n.save, style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w700)),
+        ),
+      ],
+    ),
+  );
+  if (result != null) {
+    await ref.read(profileProvider.notifier).setName(result);
+  }
+}
+
+class _ValueTile extends StatelessWidget {
+  final String label;
+  final IconData actionIcon;
+  final VoidCallback onTap;
+  const _ValueTile({required this.label, required this.actionIcon, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.lg),
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
+            border: Border.all(color: AppColors.cardBorder, width: 1.5),
+          ),
+          child: Row(
+            children: [
+              Expanded(child: Text(label, style: AppTextStyles.bodyMedium)),
+              Icon(actionIcon, color: AppColors.textSecondary, size: 20),
+            ],
+          ),
+        ),
       ),
     );
   }

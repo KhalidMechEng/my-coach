@@ -69,17 +69,12 @@ class AppColors {
   static Color get overlay => const Color(0x66000000);
 
   // ── Card depth ─────────────────────────────────────────────────────────────
-  // In dark mode `surface` sits very close to `background`, so a hairline border
-  // gives cards a readable edge; in light mode a soft shadow provides depth.
+  // Minimal (Hevy/Strong) language: ONE depth cue — the hairline border. Cards
+  // are flat neutral surfaces with a 1px `cardBorder`, no drop shadow, in both
+  // themes. `cardShadow` is kept (empty) so every call-site flattens at once.
   static Color get cardBorder =>
       isDark ? const Color(0xFF25384A) : const Color(0xFFEAEFF2);
-  static List<BoxShadow> get cardShadow => isDark
-      ? const [
-          BoxShadow(color: Color(0x33000000), blurRadius: 16, offset: Offset(0, 6)),
-        ]
-      : const [
-          BoxShadow(color: Color(0x0F14384F), blurRadius: 18, offset: Offset(0, 8)),
-        ];
+  static List<BoxShadow> get cardShadow => const [];
 
   // ── Muscle-group accents (fixed; used for chips/badges in both themes) ──────
   static const Map<String, Color> muscleGroup = {
