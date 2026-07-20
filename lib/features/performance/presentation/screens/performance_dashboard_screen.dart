@@ -92,6 +92,7 @@ class PerformanceDashboardScreen extends ConsumerWidget {
                       decoration: BoxDecoration(
                         color: AppColors.surface,
                         borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
+                        border: Border.all(color: AppColors.cardBorder, width: 1),
                       ),
                       child: Row(
                         children: [

@@ -153,7 +153,7 @@ class _FilterChip extends StatelessWidget {
           alignment: Alignment.center,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
-            color: selected ? AppColors.navy : AppColors.surfaceElevated,
+            color: selected ? AppColors.primary : AppColors.surfaceElevated,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Text(
@@ -184,9 +184,9 @@ class _ExerciseTile extends StatelessWidget {
       onTap: () => context.push('/exercise/${exercise.id}'),
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.navy,
+          color: AppColors.surface,
           borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-          boxShadow: AppColors.cardShadow,
+          border: Border.all(color: AppColors.cardBorder, width: 1),
         ),
         padding: const EdgeInsets.all(AppSpacing.sm),
         child: Row(
@@ -198,7 +198,7 @@ class _ExerciseTile extends StatelessWidget {
                 children: [
                   Text(
                     exercise.name,
-                    style: AppTextStyles.titleMedium.copyWith(color: AppColors.textInverse),
+                    style: AppTextStyles.titleMedium,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -208,7 +208,7 @@ class _ExerciseTile extends StatelessWidget {
                       Flexible(
                         child: Text(
                           exercise.localizedPrimaryMuscle(ar),
-                          style: AppTextStyles.bodySmall.copyWith(color: AppColors.onNavySecondary),
+                          style: AppTextStyles.bodySmall,
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),

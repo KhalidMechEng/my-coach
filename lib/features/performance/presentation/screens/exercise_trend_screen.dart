@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
+import '../../../../shared/widgets/stat_tile.dart';
 import '../providers/performance_provider.dart';
 
 class ExerciseTrendScreen extends ConsumerWidget {
@@ -43,15 +44,15 @@ class ExerciseTrendScreen extends ConsumerWidget {
           else ...[
             // Stat cards
             Row(children: [
-              Expanded(child: _StatCard(label: 'Best Weight', value: '${stats.bestWeight}kg')),
+              Expanded(child: StatTile(label: 'Best Weight', value: '${stats.bestWeight}kg')),
               const SizedBox(width: AppSpacing.md),
-              Expanded(child: _StatCard(label: 'Max Reps', value: '${stats.maxReps}')),
+              Expanded(child: StatTile(label: 'Max Reps', value: '${stats.maxReps}')),
             ]),
             const SizedBox(height: AppSpacing.md),
             Row(children: [
-              Expanded(child: _StatCard(label: 'Est. 1RM', value: '${stats.estimatedOneRepMax.toStringAsFixed(1)}kg')),
+              Expanded(child: StatTile(label: 'Est. 1RM', value: '${stats.estimatedOneRepMax.toStringAsFixed(1)}kg')),
               const SizedBox(width: AppSpacing.md),
-              Expanded(child: _StatCard(label: 'Sessions', value: '${stats.totalSessions}')),
+              Expanded(child: StatTile(label: 'Sessions', value: '${stats.totalSessions}')),
             ]),
 
             const SizedBox(height: AppSpacing.xxl),
@@ -79,31 +80,6 @@ class ExerciseTrendScreen extends ConsumerWidget {
 
             const SizedBox(height: 40),
           ],
-        ],
-      ),
-    );
-  }
-}
-
-class _StatCard extends StatelessWidget {
-  final String label;
-  final String value;
-  const _StatCard({required this.label, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(AppSpacing.lg),
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(AppSpacing.cardRadius),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(value, style: AppTextStyles.numericMedium),
-          const SizedBox(height: 2),
-          Text(label, style: AppTextStyles.bodySmall),
         ],
       ),
     );
